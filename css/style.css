@@ -362,7 +362,7 @@ h6,
 /* Custom Navmenu */
 
 .custom-navmenu {
-  background: #0d1e2d;
+  background: #280034;
 }
 
 .custom-navmenu .custom-menu,
@@ -379,16 +379,20 @@ h6,
 
 .custom-navmenu .custom-menu li a {
   color: #fff;
-  padding: 10px 0 !important;
+  padding: 10px 10px !important;
+  opacity: 0.8;
 }
 
 .custom-navmenu .custom-menu li a:hover {
   text-decoration: none;
+  opacity: 1;
 }
 
 .custom-navmenu .custom-menu li.active a {
-  text-decoration: underline;
+  font-weight: 500 !important;
+  opacity: 1;
 }
+
 
 .custom-navmenu h3 {
   font-size: 20px;
