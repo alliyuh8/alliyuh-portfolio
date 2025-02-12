@@ -33,7 +33,7 @@ h6,
 }
 
 .site-section {
-  padding: 7rem 0;
+  padding: 3rem 0 2rem 0;
 }
 
 .filters a {
@@ -182,6 +182,15 @@ h6,
 
 .heading {
   font-size: 28px;
+}
+
+.disclaimer {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.img{
+  width: 250px;
 }
 
 .readmore {
@@ -362,7 +371,7 @@ h6,
 /* Custom Navmenu */
 
 .custom-navmenu {
-  background: #280034;
+  background: #5c2c6a;
 }
 
 .custom-navmenu .custom-menu,
@@ -504,7 +513,7 @@ h6,
 }
 
 .footer {
-  padding: 0 0 4rem 0;
+  padding: 8rem 0 0 0;
 }
 
 .footer a {
