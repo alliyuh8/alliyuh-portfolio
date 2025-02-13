@@ -177,6 +177,7 @@ h6,
 }
 
 .h4 {
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -189,8 +190,17 @@ h6,
   font-size: 10px;
 }
 
-.img{
+.img-header{
   width: 250px;
+}
+
+.img{
+  width: 300px;
+}
+
+.img-lg{
+  width: 500px;
+  margin-bottom: 10px;
 }
 
 .readmore {
