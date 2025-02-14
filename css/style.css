@@ -33,7 +33,7 @@ h6,
 }
 
 .site-section {
-  padding: 3rem 0 2rem 0;
+  padding: 3rem 0 3rem 0;
 }
 
 .filters a {
@@ -189,7 +189,30 @@ h6,
   font-weight: bold;
   font-size: 10px;
 }
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust space between text and button */
+}
 
+.presentation-button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 2px 8px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 80%;
+  font-size: 12px;
+}
+
+
+.credits{
+  opacity:20%;
+}
 .img-header{
   width: 250px;
 }
@@ -523,7 +546,7 @@ h6,
 }
 
 .footer {
-  padding: 8rem 0 0 0;
+  padding: 8rem 0 2rem 0;
 }
 
 .footer a {
