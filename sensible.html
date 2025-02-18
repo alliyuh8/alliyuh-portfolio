@@ -73,11 +73,11 @@
         <div class="row mb-4 align-items-center">
           <div class="col-md-9" data-aos="fade-up">
             <div class="title-container">
-              <h2>Navier</h2> 
+              <h2>Sensible Robotics</h2> 
               <a class="presentation-button" href="https://docs.google.com/presentation/d/1Mdydf5gbBWowTkivCfP6S36gN5-9dm23ETjuIKHzVc8/edit?usp=sharing">View Presentation</a>
             </div>
-            <p>Engineer for Hydrodynamic Sonar System Project</p> 
-            <span class="text-muted">Skills: Solidworks, Ansys CFD, DFMA, 3D Printing, Machining</span>
+            <p>Engineer for Humanoid Robotics Test Rig</p> 
+            <span class="text-muted">Skills: Fusion360, SLA, FDM, Silicone Molding, Procedural Analysis</span>
           </div>
         </div>
       </div>
@@ -108,14 +108,18 @@
           <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Project Overview</h4>
-              <p> This was a project in collaboration with the electric hydro-foiling boat company, Navier. 
-                I worked as a Mechanical Engineering Consultant and was tasked to research, develop, and test a sonar enclosure and deployable mount. Our three main objectives were:
+              <p> This was a project in collaboration with startup robotics company, Sensible Robotics. I worked as an Engineering Consultant on a project where we were tasked to research, develop, and test silicone skin designs 
+                optimal for humanoid robotics. Our three main objectives were:
                  <br><br>
-                 1. Create an acoustically transparent sonar pod fairing to house the sonar (Gramin PS51) + electronics <br>
-                 2. Design and machine an external and deployable mount for the sonar pod <br>
-                 3. Ensure the design is fully removable and is hydrodynamic
+                 1. Create an efficient test rig for skin design iterations <br>
+                 2. Design and mold the skin iterations <br>
+                 3. Use test rig to test skin patterns through 2 procedures to measure pattern efficacy in daily situations
                  <br><br>
-                 I was the responsible engineer for creating the sonar pod fairing that houses the forward facing sonar, and saw the design through to production and delivery.
+                 I was the responsible engineer for developing the mechanical test rig which would enable our skin design team to test their different patterns and materials while keeping these constraints in mind: 
+                 <br><br>
+                 1. Develop a mechanism capable of testing the gripping action of objects in a variety of orientations. <br>
+                 2. Ensure equal and consistent force across fingers when applying the "pinching" motion.
+                 3. Ensure replicability of all settings of the test rig.
               </p>
             </div>
           </div>
@@ -131,17 +135,24 @@
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Material Selection</h4>
-              <p>Requirements for the sonar pod included acoustic transparency, corrosion resistance, mechanical strength, low resonance, and high strength-to-weight ratio. 
-                Since our sonar was a through-hull sonar, we decided to go with a material that was acoustiacally transparent and easy to use and manufacture with. From reading 
-                literature and doing research, we found that polymers were the best in terms of acoustic transparency and that composite materials would provide the highest strength-
-                to-weight ratio. We also found 3D printing to be the most viable manufacturing option for us, so we decided to use Carbon Fiber PETG.
+              <h4>Design</h4>
+              <p>Initial brainstorming led us to create this underactuated gripping mechanism that allowed for us to iteratively test the skins while only having one test variable-- The angle of attack of the fingers. This would mean that the 
+                only thing we would be changing between tests would be the angle at which fingers were coming together and gripping our test objects.
+                <br><br>
+                To ensure an equal application of force across two fingers, we developed a spring powered mechanism to provide calculatable force to the objects gripped within the rig. To create a wide range of test configurations that were easily replicable, 
+                hirth joints were used to allow for rapid reconfiguration to a series of set points.
+                <br><br>
+                Our claw mechanism was closed at a natural state and could be manually opened to grip onto different test objects. The fingers were required to be parallel throughout the actuation of the rig. Our finger adjustment design was originally 
+                going to be motorized, but we felt this was inaccurate when acted upon by a force probe. The finger designs provided by Sensible were incorporated into the hirth joint system, allowing them to be mass produced via resin printing and easily 
+                apply the skin designs (red silicone).
+                <br><br>
+                Our other team members created multiple skin designs inspired by common sports grips to biomimicry. We resin-printed molds and used silicone to produce the skins which were then attached to the fingers using pressure sensitive adhesives. We 
+                tested 4 different skin patterns and their performance in gripping onto metal plastic, rubber, and wooden test objects. To test the grip strength of each skin, we used a force probe to push out the objects from the fingers and recorded the highest force measurement.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
     <div class="site-section pb-0">
       <div class="container">
@@ -151,44 +162,8 @@
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Hydrodynamics</h4>
-              <h6"> Design </h6>
-              <p>Our sonar fairing had to be hydrodynamic, yet strong and protect the electronics from its environment. Since the fairing would be mounted to the front of the boat and would 
-                be the first to break and water as it accelerates, we needed a fairing with a profile on both the XY-plane and the XZ-plane cross sections. We were also limited in its width by 
-                our 3D print bed's dimensions and had to opt for the smallest foil possible for our sonar.
-                <br><br>
-                Since we did not want to generate any lift, we decided to go with a symmetrical foil type, modeling after the Eppler 862.
-                <br><br>
-                Since the sonar pod was quite tall, we decided to split the pod into 3 main sections that were all 3D printable and were secured using plastic welding.
-                <br><br>
-                <h6>CFD Simulations</h6>
-                We ran Ansys CFD simulations to validate our designs. Using both 3D and 2D simulations, we were able to optimize our drag coefficients and minimize pressure forces.
-                <br><br>
-                <h6>Design Changes</h6>
-                Originally, the design did not have a cutout for the sonar face, but after thorough testing, we found that better readings came from the design with a cut-away. Although it came with
-                the cost of increased drag, the tradeoff for better readings was decided as the best option by Navier engineers. Pictured is our final pod design.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section pb-0">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\eppler.png" alt="Image" class="img" style="padding-bottom: 10px;">
-          </div>
-          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="description">
-              <h4>Mounting</h4>
-              <h6"> Design </h6>
-              <p>The pod was required to be consistently underwater throughout travel. Since the N30 is a foiling boat, it rises out of the water periodically, requiring the mount to be quite long. 
-                We used an aluminum extrusion to lock the entire assembly to the boat, 3D printed foil profiles for the length of the extrusion, and created a bracket mounting system to attach the 
-                pod to the angeled extrusion.
-                <br><br>
-                All of these pieces were made from 6061 Aluminum for its corrosion resistance and were machined in our school's shop.
+              <h4>Results</h4>
+              <p>Our tests resulted in a clear winner of a fingerprint pattern similar to that of a human's. This design allowed for heightened grip onto metal, plastic, rubber, and wooden objects.
               </p>
             </div>
           </div>
