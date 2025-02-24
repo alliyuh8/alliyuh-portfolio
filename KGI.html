@@ -73,11 +73,11 @@
         <div class="row mb-4 align-items-center">
           <div class="col-md-9" data-aos="fade-up">
             <div class="title-container">
-              <h2>NASA Techrise Challenge - ORBS</h2> 
+              <h2>Keck Graduate Institute - Aran Lab</h2> 
               <a class="presentation-button" href="https://docs.google.com/presentation/d/1Mdydf5gbBWowTkivCfP6S36gN5-9dm23ETjuIKHzVc8/edit?usp=sharing">View Presentation</a>
             </div>
-            <p>Designer of Biodegradable Pods to Replace Single Use Packaging In Space</p> 
-            <span class="text-muted">Skills: Inventor, 3D printing, Soldering, C++</span>
+            <p>Summer 2022 Engineering Intern</p> 
+            <span class="text-muted">Skills: Fusion360, Solidworks, Ansys CFD, SLA, FDM, PDMS bonding, Silicone Molding, CNC, Bootstrap, SQL, QA</span>
           </div>
         </div>
       </div>
@@ -107,13 +107,11 @@
         <div class="row align-items-center">
           <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Project Overview</h4>
-              <p> This was a project was part of the 2021 NASA Techrise Challenge. In this competition, teams of students across the country were challenged 
-                to design experiments that would revolutionize space exploration. Our project proposal, Orbital Renewable Bio Spheres (ORBS), aims to make space travel more sustainable by
-                replacing bulky plastic pouches with flexible, biodegradable pods to hold liquid. Our experiments were limited to 4x4x8 inch boxes and had many volume and weight requirements. As one of 
-                the two winning teams from Califronia, we received a $1500 grant to build our proposal which will be launched via Blue Origin's New Shepard Rockt. My role as Mechanical Design Engineer meant that I
-                 prototyped the suborbital fight box to house our experiment, designed camera, microcontroller, and lighting mounts, and fabricated the biodegradable pods.
-              </p>
+              <h4>Overview:</h4>
+              <p> In Summer 2022, I interned at the Keck Graduate Institut'e Aran Lab which specializes in developing diagnostic biosensor chips. These chips can detect 
+                trace amounts of any protein or viral particle. My task was to design low-cost microfluidic flow cells that could facilitate mass-testing of chips, create a QA
+                database website using Bootstrap and SQL, and run CAD + CFD workshops for the Undergraduate Medical Device Bootcamp. We pitched these microfluidic devices to Cardea
+                Bio Inc., the producer of these chips, and they expressed interest in mass-producing our attachments for future use in testing their biosensors.              </p>
             </div>
           </div>
         </div>
@@ -128,17 +126,20 @@
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Pods</h4>
-              <p>We wanted to test how biodegradable pods could withstand suborbital conditions and see the viability of replacing single-use plastics in space exploration. To do this, we needed to design compartments
-                for the pods that would prevent any liquid damaging our electrical components while also allowing us to monitor their status throughout the launch and flight. Various shapes and layer counts were tested
-                (e.g. 1-3 layers of biodegradable cling wrap, triangular shape, spherical shape) and food coloring was used to differentiate each variation.
-                <br><br>
-                Biodegradable Pod Creation Process:
+              <h4>Project 1 - Microfluidic Flow Cells:</h4>
+              <p>The purpose of these microfluidic devices were that they had to:                <br><br>
                 <Br>
-                1. Compostable cling wrap <br>
-                2. Food dye an baby oil <br>
-                3. Cling wrap folded and filled <br>
-                4. Pod sealed via heat press <br>
+                1. Have an inlet and an outlet for solutions <br>
+                2. Locate themselves to align themselves in large assays <br>
+                3. Allow for a film to be placed over the sensing reservoir and still let liquid through<br>
+                <br><br>
+                Our initial design utilized angled pipette inlets and air outlets, which later proved to be not user-friendly. 
+                We also used interlocking dovetail systems to keep multiple attachments and sensors togther while testing large assays.
+                However, this caused accuracy issues. The buffer solution also got stuck easily on the unfilletted edges of the top chamber.
+                <br><br>
+                In our new design, we implemented vertical inlets with angeled pathways instead of angled inlets. This greatly improved the continuous
+                flow of liquid. We also put radiuses on the top chamber and got rid of the dovetail features. Instead, each attachment was datumed to 
+                the bottom edge of each chip.
               </p>
             </div>
           </div>
@@ -154,23 +155,11 @@
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Flight Box</h4>
-              Our initial idea was to house each pod within its own compartment. However, this was far too hard to 3D print and was not space efficient. 
-              <br><br>
-              We decided to switch over to compartments that contained multiple pods, similar to how they would be stored if they were actually shipped to the international Space Station. 
-              <br><br>
-              One compartment housed pods with variable layer numbers an the other compartment housed pods with variable pod shapes. The boxes had acetate side panels that were sealed with clear caulk 
-              to allow for the cameras to have unobstructed views while also being protected from any leakage.
-              <br><br>
-              Our cameras were mounted onto the bottom of the compartments via a 3D-printed camera mount. We attached wide-angle lenses to the cameras to allow for a wider field of view within a confined space. 
-              <br><br> 
-              Pictured from top to bottom:<br>
-              1. CAD design for the camera mount <br>
-              2. Camera components and assembly <br>
-              3. Comparison of camera view with and without wide-angle lens
-              <br><br> 
-              To increase visibility within the completely dark rocket cabin, we added an LED strip to one side and used aluminum foil as a reflector. Both the LED and the spy cameras were controlled using an M4
-              Metro Microcontroller that was powered by the rocket. We used C++ to write a script that turned the LED and the cameras on upon flight and recorded from ascent to descent.
+              <h4>Project 2: QA Database Website</h4>
+              My second project was to create a website that allowed for easy input and access of QA data for wafer testing. Each wafer has over 70 sensors. 
+              I designed a graphic that represented the wafers being tested and made it interactive where the user performing the QA could input a name and data for each of the sensors
+              by clicking on its representative square. This data would then be stored in a library of wafers that the researchers could easily access later on. 
+              I also developed a log in page to make it more secure.
               </p>
             </div>
           </div>
