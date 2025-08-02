@@ -9,8 +9,9 @@
 # General
 --------------------------------------------------------------*/
 
+
 body {
-  font-family: "Inconsolata", monosapce;
+  font-family: "Chivo", monosapce;
   color: #0d1e2d;
 }
 
@@ -29,7 +30,8 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Raleway", sans-serif;
+  font-family: "Chivo";
+  font-weight: 200 !important;
 }
 
 .site-section {
@@ -186,7 +188,7 @@ h6,
 }
 
 .disclaimer {
-  font-weight: bold;
+  font-weight: medium;
   font-size: 10px;
 }
 .title-container {
@@ -211,7 +213,7 @@ h6,
 
 
 .credits{
-  opacity:20%;
+  opacity:10%;
 }
 .img-header{
   width: 250px;
@@ -228,10 +230,10 @@ h6,
 
 .readmore {
   display: inline-block;
-  border: 1px solid #000;
-  padding: 10px 15px;
+  border: 0px solid #000;
+  padding: 2px 5px;
   font-size: 12px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #000;
   transition: .2s all ease;
   font-weight: 700;
