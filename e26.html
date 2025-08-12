@@ -75,11 +75,10 @@
         <div class="row mb-4 align-items-center">
           <div class="col-md-9" data-aos="fade-up">
             <div class="title-container">
-              <h2>NASA Techrise Challenge - ORBS</h2> 
-              <a class="presentation-button" href="https://docs.google.com/presentation/d/1Mdydf5gbBWowTkivCfP6S36gN5-9dm23ETjuIKHzVc8/edit?usp=sharing">View Presentation</a>
+              <h2>Wind Turbine</h2> 
             </div>
-            <p>Designer of Biodegradable Pods to Replace Single Use Packaging In Space</p> 
-            <span class="text-muted">Skills: Inventor, 3D printing, Soldering, C++</span>
+            <p>Designer for Miniature Wind Turbine</p> 
+            <span class="text-muted">Skills: Solidworks, FEA, 3D Printing</span>
           </div>
         </div>
       </div>
@@ -87,18 +86,12 @@
 
     <div class="site-section pb-0">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center justify-content-center">
           <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\final product.jpg" alt="Image" class="img-header">
+            <img src="img\e26\turbine.jpg" alt="Image" style="height: 40vh; width: auto;" class="img-header">
           </div>
           <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\sliding mech.jpg" alt="Image" class="img-header">
-          </div>
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\sonar image.jpg" alt="Image" class="img-header">
-          </div>
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img/navier/sonar.jpg" alt="Image" class="img-header">
+            <img src="img\e26\blade hub.png" alt="Image" style="height: 40vh; width: auto;" class="img-header">
           </div>
         </div>
       </div>
@@ -110,11 +103,7 @@
           <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Project Overview</h4>
-              <p> This was a project was part of the 2021 NASA Techrise Challenge. In this competition, teams of students across the country were challenged 
-                to design experiments that would revolutionize space exploration. Our project proposal, Orbital Renewable Bio Spheres (ORBS), aims to make space travel more sustainable by
-                replacing bulky plastic pouches with flexible, biodegradable pods to hold liquid. Our experiments were limited to 4x4x8 inch boxes and had many volume and weight requirements. As one of 
-                the two winning teams from Califronia, we received a $1500 grant to build our proposal which will be launched via Blue Origin's New Shepard Rockt. My role as Mechanical Design Engineer meant that I
-                 prototyped the suborbital fight box to house our experiment, designed camera, microcontroller, and lighting mounts, and fabricated the biodegradable pods.
+              <p>This was a project for my three-dimensional modeling for design course (ENGIN26). We were tasked to create a miniature wind turbine that could generate power. We designed the towerss as well as the airfoil design.
               </p>
             </div>
           </div>
@@ -126,60 +115,98 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\petg.jpg" alt="Image" class="img">
+            <img src="img\e26\blade profile.png" alt="Image" class="img">
+            <img src="img\e26\blade iso.png" alt="Image" class="img">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Pods</h4>
-              <p>We wanted to test how biodegradable pods could withstand suborbital conditions and see the viability of replacing single-use plastics in space exploration. To do this, we needed to design compartments
-                for the pods that would prevent any liquid damaging our electrical components while also allowing us to monitor their status throughout the launch and flight. Various shapes and layer counts were tested
-                (e.g. 1-3 layers of biodegradable cling wrap, triangular shape, spherical shape) and food coloring was used to differentiate each variation.
+              <h4>Blade Design</h4>
+              <p>As a team, we chose an angle of twist of 20° to optimize aerodynamic efficiency. Our blade profile features a curved top and flat bottom, streategically designed to generate lift, while maintaining a slender profile compared to designs we had seen. Our blade length was 3 inches long, whihch was the maximum length allowed to capture wind and generate lift.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img\e26\turbine cad.png" alt="Image" class="img">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Tower Design</h4>
+              <p>We divided our tower structure into two sections for 3D printing and later fused them together. The tower's design features 
+                a triangular base for stability and resilience against wind, with radial symmetry ensuring structural integrity. We opted for a 
+                truss structure similar to real-world wind turbines to enhance stability and cost efficiency. Round supports between the middle pillar 
+                and horizontal supports were used to improve load-bearing capacity by evenly distributing compression and tension forces. Thin circular
+                 base plates were also added to the triangular base to increase surface area and simplify the gluing process.
+              </p>
+              <br>
+              Using FEA, the highest displacement we had was 0.5531 mm, meaning that the top of our motor mount (the region affected), would move that much under a 1kg load. We also tested
+              stress on the von mises criterion, which tests yield strength. We found that the yield trength of our model was 3.783 N/m2.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img\e26\testing.png" alt="Image" class="img mb-3">
+            <img src="img\e26\fea.png" alt="Image" class="img mb-3">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Mechanical Testing</h4>
+              <p>The testing setup included a vertically mounted pulley positioned about 16 inches above the table surface. Next to the pulley, a vertical mount held a dial indicator to detect small deflections.
+                An eyebolt was threaded into the rear hold of the motor housing to attach a tensioned string for tower bending. The tower, without the motor or blade, was clamped to the table, aligned with the pulley
+                to apply normal force when tensioned. The string was connected to the eyebolt and threaded over the pulley.
                 <br><br>
-                Biodegradable Pod Creation Process:
-                <Br>
-                1. Compostable cling wrap <br>
-                2. Food dye an baby oil <br>
-                3. Cling wrap folded and filled <br>
-                4. Pod sealed via heat press <br>
+                We incrementally applied 100-gram weights to the string, increasing tension gradually. After each weight was added, we recorded deflection measurements from 0 to 1kg, along with visual observations. At a load of 
+                9.81N, we had a displacement of 1mm. We had the lowest mass out of all project teams, and had the highest strength to weight ratio.
               </p>
+              <br><br>
+              Using FEA, the highest displacement we had was 0.5531 mm, meaning that the top of our motor mount (the region affected), would move that much under a 1kg load. We also tested
+              stress on the von mises criterion, which tests yield strength. We found that the yield trength of our model was 3.783 N/m2.
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\eppler.png" alt="Image" class="img" style="padding-bottom: 10px;">
+            <img src="img\e26\power.png" alt="Image" class="img mb-3">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Flight Box</h4>
-              Our initial idea was to house each pod within its own compartment. However, this was far too hard to 3D print and was not space efficient. 
-              <br><br>
-              We decided to switch over to compartments that contained multiple pods, similar to how they would be stored if they were actually shipped to the international Space Station. 
-              <br><br>
-              One compartment housed pods with variable layer numbers an the other compartment housed pods with variable pod shapes. The boxes had acetate side panels that were sealed with clear caulk 
-              to allow for the cameras to have unobstructed views while also being protected from any leakage.
-              <br><br>
-              Our cameras were mounted onto the bottom of the compartments via a 3D-printed camera mount. We attached wide-angle lenses to the cameras to allow for a wider field of view within a confined space. 
-              <br><br> 
-              Pictured from top to bottom:<br>
-              1. CAD design for the camera mount <br>
-              2. Camera components and assembly <br>
-              3. Comparison of camera view with and without wide-angle lens
-              <br><br> 
-              To increase visibility within the completely dark rocket cabin, we added an LED strip to one side and used aluminum foil as a reflector. Both the LED and the spy cameras were controlled using an M4
-              Metro Microcontroller that was powered by the rocket. We used C++ to write a script that turned the LED and the cameras on upon flight and recorded from ascent to descent.
+              <h4>Power Generation Testing</h4>
+              <p>In our experimental setup, we directed a wind blower at the turbine, ensuring that the wind entered the blades at a consistent speed of around 25 mph. 
+                An electrical meter was integrated into the circuit, placed in series with the motor to measure key electrical parameters: voltage (V), current (mA), and power (mW).
+                 To fine-tune the turbine's performance, a load box was incorporated into the circuit, allowing us to adjust the loading conditions by varying the resistance.
+                To measure the blade's rotational speed (rpm), we employed a tachometer. A small piece of reflective duct tape was adhered to one of the turbine blades to serve as a marker. 
+                This marker enabled the tachometer to detect each complete revolution of the blade. The tachometer was strategically placed next to the blower, ensuring continuous and accurate 
+                speed readings throughout the experiment.
+                <br><br>
+                We began by turning off the blower and resetting the potentiometers, effectively reducing the circuit's resistance to its minimum level. This step was essential to establish a 
+                baseline for the turbine's operation under minimal load. Once the setup was prepared, we activated the blower, allowing wind to flow through the blades, and initiated the rotation.
+                <br><br>
+                As the turbine blades began to spin, we carefully adjusted the loading conditions by fine-tuning the potentiometers. By increasing the circuit resistance gradually, we could 
+                simulate different operational conditions and observe how these adjustments impacted the turbine's performance.
+                <br><br>
+                Our power generation was not the greatest due to poor blade design. Our peak power generation was 320 mWatts at 2.2 Volts and 140 mAmps. Our highest blade RPM was 4600.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <!--
     <div class="site-section pb-0">
       <div class="container">
         <div class="row justify-content-start text-left mb-4">
@@ -248,7 +275,7 @@
     </div>
 
 
-    <!--
+    
       <div class="site-section pb-0">
         <div class="container">
 

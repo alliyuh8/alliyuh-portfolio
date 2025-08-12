@@ -38,6 +38,12 @@ h6,
   padding: 3rem 0 3rem 0;
 }
 
+.disclosure {
+  font-weight: 80;
+  font-style: italic;
+  color: grey;
+}
+
 .filters a {
   color: #000;
   display: inline-block;
