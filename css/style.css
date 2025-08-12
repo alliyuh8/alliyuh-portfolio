@@ -44,6 +44,23 @@ h6,
   color: grey;
 }
 
+.thumbnail-container {
+  position: relative;
+  display: inline-block;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 0.6em;
+  color: rgba(255, 255, 255, 0.408);
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-family: 'Chivo';
+  pointer-events: none; /* prevents blocking clicks on the link */
+}
+
 .filters a {
   color: #000;
   display: inline-block;
