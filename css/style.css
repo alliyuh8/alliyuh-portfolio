@@ -412,7 +412,7 @@ h6,
 /* Custom Navmenu */
 
 .custom-navmenu {
-  background: #5c2c6a;
+  background: #8e50a1;
 }
 
 .custom-navmenu .custom-menu,
@@ -425,6 +425,8 @@ h6,
 .custom-navmenu .custom-menu li {
   margin-bottom: 0;
   font-size: 20px;
+  font-family: 'Chivo';
+  font-weight: 100;
 }
 
 .custom-navmenu .custom-menu li a {
@@ -439,7 +441,7 @@ h6,
 }
 
 .custom-navmenu .custom-menu li.active a {
-  font-weight: 500 !important;
+  font-weight: 300 !important;
   opacity: 1;
 }
 
