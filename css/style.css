@@ -429,8 +429,12 @@ h6,
 /* Custom Navmenu */
 
 .custom-navmenu {
-  background: #8e50a1;
+  background: rgba(211, 211, 211, 0.3); /* light grey with transparency */
+  backdrop-filter: blur(10px); /* glassy blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 8px; /* optional: rounded corners */
 }
+
 
 .custom-navmenu .custom-menu,
 .custom-navmenu .custom-menu li {
@@ -447,7 +451,7 @@ h6,
 }
 
 .custom-navmenu .custom-menu li a {
-  color: #fff;
+  color: #000000;
   padding: 10px 10px !important;
   opacity: 0.8;
 }
