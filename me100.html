@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ICBreadboards - allisonyuh.</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .video-caption {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 8px;
+      font-style: italic;
+    }
+    .video-wrap {
+      width: 100%;
+    }
+    .video-wrap video {
+      width: 100%;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-3">
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <ul class="custom-menu d-flex">
+            <li class="active"><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">allisonyuh.</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Title -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-9" data-aos="fade-up">
+            <div class="title-container">
+              <h2>ICBreadboards</h2>
+              <a class="presentation-button" href="ME100_Final_Project___ICBreadboards.pdf" target="_blank">View Report</a>
+              <a class="presentation-button" href="https://canva.link/w1d6kie60m7f67l" target="_blank">View Presentation</a>
+            </div>
+            <p>ME100 Final Project — Smart Electric Skateboard System</p>
+            <span class="text-muted">Skills: ESP32, MicroPython, ESP-NOW, 3D Printing, OnShape</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header images — centered -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-auto" data-aos="fade-up">
+            <img src="img/me100/miniboard.JPG" alt="Mini Board Prototype" class="img-header">
+          </div>
+          <div class="col-md-auto" data-aos="fade-up">
+            <img src="img/me100/BIGBOARD.jpeg" alt="Big Board Prototype" class="img-header">
+          </div>
+          <div class="col-md-auto" data-aos="fade-up">
+            <img src="img/me100/remote prototype.JPG" alt="Remote" class="img-header">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Project Overview</h4>
+              <p>This was a final project for ME100 (Design of Electromechanical Systems), completed in collaboration with teammates Roshni Arun and Jade Stashin. We designed and built ICBreadboards — a smart electric skateboard system aimed at enhancing rider safety, preventing theft, and restoring the engagement of traditional skateboarding.
+                <br><br>
+                Our three core objectives were:
+                <br><br>
+                1. Design a push-controlled acceleration system so riders can propel the board naturally, without relying solely on a remote<br>
+                2. Implement an ultrasonic-based foot-braking detection system for intuitive, safe deceleration<br>
+                3. Build a wireless anti-theft alarm system that triggers when unauthorized motion is detected on an armed board
+                <br><br>
+                The system used three ESP32 microcontrollers communicating over ESP-NOW: a Big Board (sensing + feedback), a Mini Board (motor control), and a handheld Remote. I was responsible for the code architecture, ESP-NOW communication protocol, sensor integration, and PCB design for the remote.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESP32 Communication Diagram -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12" data-aos="fade-up">
+            <img src="img/me100/ESP32 Communication Diagram.png" alt="ESP32 Communication Diagram" class="img" style="width: 100%; max-width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Big Board -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/BIGBOARD.jpeg" alt="Big Board" class="img">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Big Board — Sensing & Feedback</h4>
+              <p>The Big Board served as the brain of the system, integrating an IMU, FSR pressure sensor, and ultrasonic distance sensor with an ESP32 microcontroller. An OLED display provided real-time telemetry — showing speed, acceleration, obstacle detection status, and whether the board was armed or disarmed.
+                <br><br>
+                The IMU detected push-off acceleration to trigger motor speed increases, while also powering the anti-theft system by detecting unauthorized movement when locked. The pressure sensor ensured acceleration only engaged when a rider's foot was properly placed. The ultrasonic sensor handled foot-cued braking by detecting when a rider dragged their rear foot near the board.
+                <br><br>
+                All sensor data was processed on the Big Board and wirelessly relayed to the Mini Board via ESP-NOW for real-time motor execution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Big Board original CAD -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Big Board CAD</h4>
+              <p>Originally, we intended to prototype a full working version of the skateboard. However, due to high-voltage safety constraints and challenges getting the larger system operational within the timeline, we validated our approach using a miniature model. We separated big board control to a smaller miniature model that would replicate the motion for safety. 
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/original_bigboard_CAD.png" alt="Big Board Original CAD" class="img" style="padding-bottom: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mini Board -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/miniboard.JPG" alt="Mini Board" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Mini Board — Motor Control</h4>
+              <p>The Mini Board acted as the dedicated motor controller, receiving wireless commands from both the Big Board and Remote to drive a 12V DC motor via an H-bridge driver. Motor speed was controlled through a PWM signal (1kHz, 0–1023 duty cycle), with Hall effect sensors providing position feedback through a level shifter to accommodate 5V–to–3.3V logic conversion.
+                <br><br>
+                The control logic included incremental acceleration (2% steps), automatic deceleration when obstacles were detected (5% reduction every 0.5 seconds), and safety interlocks that prevented motor operation when the board was armed or an obstacle was present. The motor was powered by an isolated 11.1V LiPo battery separate from the ESP32 logic supply.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Remote -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/remote prototype.JPG" alt="Remote Prototype" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Remote & PCB Design</h4>
+              <p>The handheld remote used an ESP32 Feather with three buttons for acceleration, deceleration, and security mode toggling. A status LED indicated armed/disarmed state, and a PWM-driven speaker provided audio feedback for button presses and theft alarms. When the board detected unauthorized motion while armed, the remote received an "ALARM" signal and triggered a sustained high-frequency alert in sync with the board's onboard speaker.
+                <br><br>
+                Beyond the perfboard prototype, we also designed a custom PCB in KiCAD using an ESP32-S2-SOLO chip. The PCB matched all remote capabilities with a more compact, polished layout — battery-powered and rechargeable via USB-C, with a buck regulator stepping down to 3.3V logic. Test points and mounting holes were added for debugging and physical integration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAD Assembly -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/assemblyisometric.png" alt="CAD Isometric Assembly" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Manufacturing & CAD</h4>
+              <p>The mechanical components were designed in OnShape and 3D printed on a Bambu P1S using PLA filament at 5% infill, balancing structural integrity with material efficiency. Motor mounts, wheel housings, and structural supports were all custom-designed. Wheels were fastened using M6 heat-set inserts and Torx-head shoulder bolts for precise alignment under load, with remaining assembly using M4 hardware for ease of maintenance.
+                <br><br>
+                The 12V DC motor's keyed shaft was coupled to a custom friction-fit flange for efficient torque transmission. All electronic components were hand-soldered onto perf boards for reliable signal routing and power distribution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exploded CAD -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Exploded Assembly View</h4>
+              <p>The exploded CAD view reveals how each subsystem fits together — the deck platform, motor sub-assembly with flanged shaft coupling, truck housings, and wheel attachments all designed for straightforward assembly and access during prototyping. Each part was designed to be independently removable so electronics and mechanical components could be iterated without full disassembly.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/exploded CAD .png" alt="Exploded CAD View" class="img" style="padding-bottom: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOM -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me100/BOM.png" alt="Bill of Materials" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Code Architecture & Communication</h4>
+              <p>All three ESP32s communicated over the ESP-NOW wireless protocol using defined message signals — covering acceleration, deceleration, obstacle detection, arming/disarming, and alarm triggering. The full system was written in MicroPython using the Thonny IDE.
+                <br><br>
+                Key signals included push-based acceleration from the Big Board's IMU, manual override from the Remote, automatic obstacle deceleration, and the anti-theft ALARM/LOCK/UNLOCK handshake between all three boards. The modular signal table ensured clean separation of concerns across boards while maintaining real-time responsiveness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row mb-3" data-aos="fade-up">
+          <div class="col-12">
+            <h4>Working Prototype Videos</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4" data-aos="fade-up">
+            <div class="video-wrap">
+              <video controls playsinline>
+                <source src="img/me100/bigboard_acceleration.MOV" type="video/mp4">
+              </video>
+              <p class="video-caption">Big board push-controlled acceleration</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4" data-aos="fade-up">
+            <div class="video-wrap">
+              <video controls playsinline>
+                <source src="img/me100/remote_control_smallboard.MOV" type="video/mp4">
+              </video>
+              <p class="video-caption">Remote control driving the small board end-to-end</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="video-wrap">
+              <video controls playsinline>
+                <source src="img/me100/alarm_system.MOV" type="video/mp4">
+              </video>
+              <p class="video-caption">Anti-theft alarm system</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Works -->
+    <div class="site-section pb-0" style="margin-top: 10vh;">
+      <div class="container">
+        <div class="row justify-content-start text-left mb-4">
+          <div class="col-5">
+            <h3 class="h3 heading">More Works</h3>
+          </div>
+        </div>
+
+        <div class="row" id="more-works"></div>
+        <script>
+          const works = [
+            {
+              title: "Apple",
+              subtitle: "Spring 2025 Co-Op",
+              link: "apple.html",
+              img: "img/index/apple thumbnail.jpg",
+              credit: "Photo: Alireza Khoddam"
+            },
+            {
+              title: "Arc Boat Company",
+              subtitle: "Summer 2024 Internship",
+              link: "arc.html",
+              img: "img/index/arc thumbnail.png",
+              credit: "Photo: Arc Team"
+            },
+            {
+              title: "Eko Health",
+              subtitle: "Spring 2024 Project",
+              link: "eko.html",
+              img: "img/index/eko thumbnail.png"
+            },
+            {
+              title: "Tesla",
+              subtitle: "Fall 2024 Project",
+              link: "tesla.html",
+              img: "img/index/tesla thumbnail.jpg",
+              credit: "Photo: Annegret Hilse"
+            },
+            {
+              title: "Navier",
+              subtitle: "Spring 2024 Project",
+              link: "navier.html",
+              img: "img/index/navier thumbnail.jpg"
+            },
+            {
+              title: "Sensible Robotics",
+              subtitle: "Fall 2023 Project",
+              link: "sensible.html",
+              img: "img/index/sensible thumbnail.jpg"
+            },
+            {
+              title: "Bold Reuse",
+              subtitle: "Fall 2024 Project",
+              link: "bold.html",
+              img: "img/index/bold thumbnail.jpg",
+              credit: "Photo: Bold Reuse Team"
+            },
+            {
+              title: "NASA Techrise Challenge",
+              subtitle: "2021-2023 Winning Project",
+              link: "nasa.html",
+              img: "img/index/nasa thumbnail.png"
+            },
+            {
+              title: "Boeing: B-Lift",
+              subtitle: "2023 CADathon Winning Project",
+              link: "boeing.html",
+              img: "img/index/blift thumbnail.png"
+            },
+            {
+              title: "EnableTech: Mobile Platform",
+              subtitle: "Fall 2023 Project",
+              link: "enabletech.html",
+              img: "img/index/mobile platform thumbnail.png"
+            },
+            {
+              title: "Google X Moonshot: Tidal",
+              subtitle: "Fall 2023 Project",
+              link: "tidal.html",
+              img: "img/index/tidal thumbnail.jpg",
+              credit: "Photo: Tidal Team"
+            },
+            {
+              title: "Keck Graduate Institute: Aran Lab",
+              subtitle: "Summer 2022 Internship",
+              link: "KGI.html",
+              img: "img/index/kgi thumbnail.jpg"
+            },
+            {
+              title: "E26: Wind Turbine",
+              subtitle: "Spring 2024 Project",
+              link: "e26.html",
+              img: "img/index/wind turbine thumbnail.png"
+            },
+            {
+              title: "SkillsUSA: Arm Stand Aid",
+              subtitle: "2022 Winning Project",
+              link: "skillsusa.html",
+              img: "img/index/skillsusa thumbnail.png"
+            },
+            {
+              title: "Spyder3D: 3D Printable Face Masks",
+              subtitle: "2020 Project",
+              link: "spyder3d.html",
+              img: "img/index/mask thumbnail.jpg"
+            }
+          ];
+
+          const currentPage = window.location.pathname.split("/").pop();
+          const filtered = works.filter(work => work.link !== currentPage);
+          const shuffled = filtered.sort(() => 0.5 - Math.random());
+          const selected = shuffled.slice(0, 3);
+
+          const container = document.getElementById("more-works");
+          selected.forEach(work => {
+            let itemHtml;
+            if (work.credit) {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="thumbnail-container" style="position: relative; display: inline-block;">
+                <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+                <span class="photo-credit">${work.credit}</span>
+              </div>
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+            </a>
+          </div>`;
+            } else {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+              <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+            </a>
+          </div>`;
+            }
+            container.innerHTML += itemHtml;
+          });
+        </script>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright allisonyuh. All Rights Reserved</p>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/allisonyuh/" target="blank"><span class="icofont-linkedin"></span></a>
+          <a href="mailto:allisonyuh@berkeley.com"><span class="icofont-envelope"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
