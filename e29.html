@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Navier - allisonyuh.</title>
+  <title>GlideAssist - allisonyuh.</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -13,12 +13,11 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
-    rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> 
-   <!-- Bootstrap CSS File -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -30,16 +29,37 @@
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Template Name: MyPortfolio
-    Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com/
-  ======================================================= -->
+  <style>
+    .video-caption {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 8px;
+      font-style: italic;
+    }
+    .video-wrap {
+      width: 100%;
+    }
+    .video-wrap video {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .header-video-wrap {
+      display: inline-block;
+    }
+    .header-video-wrap video {
+      height: 30vh;
+      width: auto;
+      border-radius: 4px;
+    }
+    .img-header {
+      height: 30vh;
+      width: auto;
+    }
+  </style>
 </head>
 
 <body>
-
 
   <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
     <div class="container py-2 py-md-3">
@@ -48,7 +68,6 @@
           <ul class="custom-menu d-flex">
             <li class="active"><a href="index.html">home</a></li>
             <li><a href="about.html">about</a></li>
-            <!--<li><a href="works.html">Works</a></li>-->
             <li><a href="contact.html">contact</a></li>
           </ul>
         </div>
@@ -59,65 +78,64 @@
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">allisonyuh.</a>
-
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
       </a>
-
     </div>
   </nav>
 
-
-
   <main id="main">
+
+    <!-- Title -->
     <div class="site-section">
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-9" data-aos="fade-up">
             <div class="title-container">
-              <h2>Navier</h2> 
-              <a class="presentation-button" href="https://docs.google.com/presentation/d/1Mdydf5gbBWowTkivCfP6S36gN5-9dm23ETjuIKHzVc8/edit?usp=sharing">View Presentation</a>
+              <h2>GlideAssist</h2>
+              <a class="presentation-button" href="img/e29/E29 - Final Report.docx.pdf" target="_blank">View Report</a>
+              <a class="presentation-button" href="img/e29/E29 Project Final Video Slides.pdf" target="_blank">View Slides</a>
             </div>
-            <p>Engineer for Hydrodynamic Sonar System Project</p> 
-            <span class="text-muted">Skills: Solidworks, Ansys CFD, DFMA, 3D Printing, Machining</span>
+            <p>E29 Final Project — Ergonomic Whiteboard Eraser Tool</p>
+            <span class="text-muted">Skills: SolidWorks, GD&T, 3D Printing, Machining, DFMA, Prototyping</span>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Header images + video — centered -->
     <div class="site-section pb-0">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row justify-content-center align-items-center">
           <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\final product.jpg" alt="Image" class="img-header">
+            <img src="img/e29/Final Prototype - 1.JPG" alt="GlideAssist Final Prototype Front" class="img-header">
           </div>
           <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\sliding mech.jpg" alt="Image" class="img-header">
+            <img src="img/e29/Final Prototype - 2.JPG" alt="GlideAssist Final Prototype Side" class="img-header">
           </div>
           <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\sonar image.jpg" alt="Image" class="img-header">
-          </div>
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img/navier/sonar.jpg" alt="Image" class="img-header">
+            <div class="header-video-wrap">
+              <video controls playsinline>
+                <source src="img/e29/Product Demo.mov" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+
+    <!-- Project Overview -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Project Overview</h4>
-              <p> This was a project in collaboration with the electric hydro-foiling boat company, Navier. 
-                I worked as a Mechanical Engineering Consultant and was tasked to research, develop, and test a sonar enclosure and deployable mount. Our three main objectives were:
-                 <br><br>
-                 1. Create an acoustically transparent sonar pod fairing to house the sonar (Gramin PS51) + electronics <br>
-                 2. Design and machine an external and deployable mount for the sonar pod <br>
-                 3. Ensure the design is fully removable and is hydrodynamic
-                 <br><br>
-                 I was the responsible engineer for creating the sonar pod fairing that houses the forward facing sonar, and saw the design through to production and delivery.
+              <p>GlideAssist is an ergonomic whiteboard erasing tool designed for E29 (Engineering Design and Manufacturing) in collaboration with teammates Tanaisha, Amisha, Alan, Kian, Abdo, and Tomas. The product targets classroom and university environments, addressing two key pain points: the physical strain of repeated whiteboard erasing, and accessibility for users with shoulder mobility limitations.
+                <br><br>
+                The US has an estimated 5.3 million teachers and university faculty, with 77% using whiteboards, creating a potential market of over 816,000 users. Our solution aims to reduce fatigue and wrist strain while making whiteboards more accessible for those who struggle to reach or apply pressure across a full board.
+                <br><br>
+                GlideAssist combines a telescoping aluminum shaft, ergonomic trigger handle with solution dispensing, a wiping eraser head with corner magnets, and optional accessories including a marker holder and secondary handle. These were all designed for ease of use, assembly, and future mass manufacturing.
               </p>
             </div>
           </div>
@@ -125,19 +143,19 @@
       </div>
     </div>
 
+    <!-- Eraser Head -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\petg.jpg" alt="Image" class="img">
+            <img src="img/e29/Wiping Cloth Slide In.JPG" alt="Wiping Cloth Slide-In Mechanism" class="img">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Material Selection</h4>
-              <p>Requirements for the sonar pod included acoustic transparency, corrosion resistance, mechanical strength, low resonance, and high strength-to-weight ratio. 
-                Since our sonar was a through-hull sonar, we decided to go with a material that was acoustiacally transparent and easy to use and manufacture with. From reading 
-                literature and doing research, we found that polymers were the best in terms of acoustic transparency and that composite materials would provide the highest strength-
-                to-weight ratio. We also found 3D printing to be the most viable manufacturing option for us, so we decided to use Carbon Fiber PETG.
+              <h4>Eraser Head</h4>
+              <p>The eraser head was designed around four key features. Magnets embedded in all four corners ensure consistent surface contact across the full eraser face when pressing against the whiteboard. A felt wiping cloth slides in through a dedicated gap at the edge for easy replacement without disassembly.
+                <br><br>
+                An internal canal routes cleaning solution from the handle's squeeze bottle through to the eraser surface, evenly distributing fluid for wet erasing. A snap-fit hinge with a clearance slot connects the head to the shaft joint, allowing the eraser face to pivot and maintain flush contact even when the handle is held at an angle.
               </p>
             </div>
           </div>
@@ -145,29 +163,19 @@
       </div>
     </div>
 
+    <!-- Handle -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\eppler.png" alt="Image" class="img" style="padding-bottom: 10px;">
+            <img src="img/e29/Handle.JPG" alt="Ergonomic Handle" class="img" style="padding-bottom: 10px;">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Hydrodynamics</h4>
-              <p>Our sonar fairing had to be hydrodynamic, yet strong and protect the electronics from its environment. Since the fairing would be mounted to the front of the boat and would 
-                be the first to break and water as it accelerates, we needed a fairing with a profile on both the XY-plane and the XZ-plane cross sections. We were also limited in its width by 
-                our 3D print bed's dimensions and had to opt for the smallest foil possible for our sonar.
+              <h4>Handle</h4>
+              <p>The handle was designed ergonomically for comfortable long-duration use. A squeeze trigger on the underside actuates the solution dispensing system — pressing it compresses an off-the-shelf squeeze bottle fitted with silicone tubing that routes fluid to the eraser head.
                 <br><br>
-                Since we did not want to generate any lift, we decided to go with a symmetrical foil type, modeling after the Eppler 862.
-                <br><br>
-                Since the sonar pod was quite tall, we decided to split the pod into 3 main sections that were all 3D printable and were secured using plastic welding.
-                <br><br>
-                <h6>CFD Simulations</h6>
-                We ran Ansys CFD simulations to validate our designs. Using both 3D and 2D simulations, we were able to optimize our drag coefficients and minimize pressure forces.
-                <br><br>
-                <h6>Design Changes</h6>
-                Originally, the design did not have a cutout for the sonar face, but after thorough testing, we found that better readings came from the design with a cut-away. Although it came with
-                the cost of increased drag, the tradeoff for better readings was decided as the best option by Navier engineers. Pictured is our final pod design.
+                The cap on the back unscrews for easy solution refill. The rotating joint at the front of the handle uses a snap-fit connection to the shaft, allowing wrist-friendly angle adjustments mid-use. All handle components were 3D printed in PLA due to the complex organic geometry involved.
               </p>
             </div>
           </div>
@@ -175,224 +183,285 @@
       </div>
     </div>
 
+    <!-- Bottle Refill -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Solution Dispensing System</h4>
+              <p>The fluid dispensing system uses an off-the-shelf squeeze bottle seated inside the handle housing, connected via silicone tubing to the eraser head's internal canal network. The removable rear cap screws on and off for hassle-free solution refills without any tools.
+                <br><br>
+                The tubing runs through the length of the shaft and distributes cleaning fluid evenly across the eraser surface on demand, giving users precise control over how much solution is applied during erasing.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/e29/Bottle Refill.JPG" alt="Bottle Refill System" class="img" style="padding-bottom: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shaft -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\sliding mech.jpg" alt="Image" class="img" style="padding-bottom: 10px;">
+            <img src="img/e29/Length Adjustment Set Screw.JPG" alt="Length Adjustment Set Screw" class="img" style="padding-bottom: 10px;">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Mounting</h4>
-              <p>The pod was required to be consistently underwater throughout travel. Since the N30 is a foiling boat, it rises out of the water periodically, requiring the mount to be quite long. 
-                We used an aluminum extrusion to lock the entire assembly to the boat, 3D printed foil profiles for the length of the extrusion, and created a bracket mounting system to attach the 
-                pod to the angeled extrusion.
+              <h4>Telescoping Shaft</h4>
+              <p>The shaft consists of inner and outer aluminum pipe sections machined from stock material. The outer shaft is 16 inches with an additional 15.75-inch inner extension, giving a fully extended reach of 32 inches. This is enough to comfortably reach the top of a standard whiteboard without a ladder or step stool.
                 <br><br>
-                All of these pieces were made from 6061 Aluminum for its corrosion resistance and were machined in our school's shop.
+                Length is locked using a tapped set screw that engages a slider slot milled into the outer shaft, allowing tool-free length adjustment at any point along the travel range. The use of milled aluminum provides rigidity while keeping the assembly lightweight.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-<div class="site-section pb-0" style="margin-top: 10vh;">
-        <div class="container">
-          <div class="row justify-content-start text-left mb-4">
-            <div class="col-5">
-              <h3 class="h3 heading">More Works</h3>
+
+    <!-- Rotational Joints -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/e29/Rotational Joints.JPG" alt="Rotational Joints" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Joint Interfaces</h4>
+              <p>Two snap-fit rotational joints connect the eraser head to the shaft and the shaft to the handle. Each joint features a spring-back clip that locks into place with a satisfying snap and releases with a simple squeeze. This allows full disassembly in seconds for cleaning or cloth replacement.
+                <br><br>
+                A pin-slot interface at each joint enables smooth rotation while preventing unintended axial movement. The joints also provide the user mobility needed to maintain flush eraser contact at varying board heights and angles. All joint components were 3D printed in PLA for prototyping.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="row" id="more-works"></div>
-          <script>
-            const works = [
-              {
-                title: "Apple",
-                subtitle: "Spring 2025 Co-Op",
-                link: "apple.html",
-                img: "img/index/apple thumbnail.jpg",
-                credit: "Photo: Alireza Khoddam"
-              },
-              {
-                title: "Arc Boat Company",
-                subtitle: "Summer 2024 Internship",
-                link: "arc.html",
-                img: "img/index/arc thumbnail.png",
-                credit: "Photo: Arc Team"
-              },
-              {
-                title: "Eko Health",
-                subtitle: "Spring 2024 Project",
-                link: "eko.html",
-                img: "img/index/eko thumbnail.png"
-              },
-              {
-                title: "Tesla",
-                subtitle: "Fall 2024 Project",
-                link: "tesla.html",
-                img: "img/index/tesla thumbnail.jpg",
-                credit: "Photo: Annegret Hilse"
-              },
-              {
-                title: "Navier",
-                subtitle: "Spring 2024 Project",
-                link: "navier.html",
-                img: "img/index/navier thumbnail.jpg"
-              },
-              {
-                title: "Sensible Robotics",
-                subtitle: "Fall 2023 Project",
-                link: "sensible.html",
-                img: "img/index/sensible thumbnail.jpg"
-              },
-              {
-                title: "Bold Reuse",
-                subtitle: "Fall 2024 Project",
-                link: "bold.html",
-                img: "img/index/bold thumbnail.jpg",
-                credit: "Photo: Bold Reuse Team"
-              },
-              {
-                title: "NASA Techrise Challenge",
-                subtitle: "2021-2023 Winning Project",
-                link: "nasa.html",
-                img: "img/index/nasa thumbnail.png"
-              },
-              {
-                title: "Boeing: B-Lift",
-                subtitle: "2023 CADathon Winning Project",
-                link: "boeing.html",
-                img: "img/index/blift thumbnail.png"
-              },
-              {
-                title: "EnableTech: Mobile Platform",
-                subtitle: "Fall 2023 Project",
-                link: "enabletech.html",
-                img: "img/index/mobile platform thumbnail.png"
-              },
-              {
-                title: "Google X Moonshot: Tidal",
-                subtitle: "Fall 2023 Project",
-                link: "tidal.html",
-                img: "img/index/tidal thumbnail.jpg",
-                credit: "Photo: Tidal Team"
-              },
-              {
-                title: "Keck Graduate Institute: Aran Lab",
-                subtitle: "Summer 2022 Internship",
-                link: "KGI.html",
-                img: "img/index/kgi thumbnail.jpg"
-              },
-              {
-                title: "E26: Wind Turbine",
-                subtitle: "Spring 2024 Project",
-                link: "e26.html",
-                img: "img/index/wind turbine thumbnail.png"
-              },
-              {
-                title: "SkillsUSA: Arm Stand Aid",
-                subtitle: "2022 Winning Project",
-                link: "skillsusa.html",
-                img: "img/index/skillsusa thumbnail.png"
-              },
-              {
-                title: "Spyder3D: 3D Printable Face Masks",
-                subtitle: "2020 Project",
-                link: "spyder3d.html",
-                img: "img/index/mask thumbnail.jpg"
-              }
-            ];
+    <!-- Marker Holder -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/e29/Marker Holder.JPG" alt="Marker Holder Accessory" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Accessory — Marker Holder</h4>
+              <p>The marker holder is an optional snap-on accessory that mounts directly to the shaft via mounting rails for quick attachment and removal. Snap-fit slots hold up to five markers securely in an open-top radial layout, providing easy visibility and one-handed access to any marker mid-lesson.
+                <br><br>
+                The symmetrical spoke design distributes weight evenly around the handle center to avoid unbalancing the tool. Filleted edges at all stress concentrations improve fatigue life. Like the rest of the plastic components, it was fully 3D printed in PLA for lightweight rapid prototyping.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Secondary Handle -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/e29/Secondary Handle.JPG" alt="Secondary Handle Accessory" class="img" style="padding-bottom: 10px;">
+          </div>
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Accessory — Secondary Handle</h4>
+              <p>The secondary handle is a snap-on D-ring grip that attaches anywhere along the shaft via a semi-circular rod clamp, letting users position it at whatever point feels most natural for two-handed control. This is especially useful for users with limited shoulder mobility who benefit from distributing load across both arms.
+                <br><br>
+                The ergonomic finger grooves on the inner face provide a secure, comfortable grip without requiring a tight squeeze. The snap-fit clamp installs and removes in one motion with no tools required, and the open-ring geometry keeps the assembly compact when not in use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            // Get current page
-            const currentPage = window.location.pathname.split("/").pop();
+    <!-- More Works -->
+    <div class="site-section pb-0" style="margin-top: 10vh;">
+      <div class="container">
+        <div class="row justify-content-start text-left mb-4">
+          <div class="col-5">
+            <h3 class="h3 heading">More Works</h3>
+          </div>
+        </div>
 
-            // Filter out the current work
-            const filtered = works.filter(work => work.link !== currentPage);
+        <div class="row" id="more-works"></div>
+        <script>
+          const works = [
+            {
+              title: "Apple",
+              subtitle: "Spring 2025 Co-Op",
+              link: "apple.html",
+              img: "img/index/apple thumbnail.jpg",
+              credit: "Photo: Alireza Khoddam"
+            },
+            {
+              title: "Arc Boat Company",
+              subtitle: "Summer 2024 Internship",
+              link: "arc.html",
+              img: "img/index/arc thumbnail.png",
+              credit: "Photo: Arc Team"
+            },
+            {
+              title: "Eko Health",
+              subtitle: "Spring 2024 Project",
+              link: "eko.html",
+              img: "img/index/eko thumbnail.png"
+            },
+            {
+              title: "Tesla",
+              subtitle: "Fall 2024 Project",
+              link: "tesla.html",
+              img: "img/index/tesla thumbnail.jpg",
+              credit: "Photo: Annegret Hilse"
+            },
+            {
+              title: "Navier",
+              subtitle: "Spring 2024 Project",
+              link: "navier.html",
+              img: "img/index/navier thumbnail.jpg"
+            },
+            {
+              title: "Sensible Robotics",
+              subtitle: "Fall 2023 Project",
+              link: "sensible.html",
+              img: "img/index/sensible thumbnail.jpg"
+            },
+            {
+              title: "Bold Reuse",
+              subtitle: "Fall 2024 Project",
+              link: "bold.html",
+              img: "img/index/bold thumbnail.jpg",
+              credit: "Photo: Bold Reuse Team"
+            },
+            {
+              title: "NASA Techrise Challenge",
+              subtitle: "2021-2023 Winning Project",
+              link: "nasa.html",
+              img: "img/index/nasa thumbnail.png"
+            },
+            {
+              title: "Boeing: B-Lift",
+              subtitle: "2023 CADathon Winning Project",
+              link: "boeing.html",
+              img: "img/index/blift thumbnail.png"
+            },
+            {
+              title: "EnableTech: Mobile Platform",
+              subtitle: "Fall 2023 Project",
+              link: "enabletech.html",
+              img: "img/index/mobile platform thumbnail.png"
+            },
+            {
+              title: "Google X Moonshot: Tidal",
+              subtitle: "Fall 2023 Project",
+              link: "tidal.html",
+              img: "img/index/tidal thumbnail.jpg",
+              credit: "Photo: Tidal Team"
+            },
+            {
+              title: "Keck Graduate Institute: Aran Lab",
+              subtitle: "Summer 2022 Internship",
+              link: "KGI.html",
+              img: "img/index/kgi thumbnail.jpg"
+            },
+            {
+              title: "E26: Wind Turbine",
+              subtitle: "Spring 2024 Project",
+              link: "e26.html",
+              img: "img/index/wind turbine thumbnail.png"
+            },
+            {
+              title: "SkillsUSA: Arm Stand Aid",
+              subtitle: "2022 Winning Project",
+              link: "skillsusa.html",
+              img: "img/index/skillsusa thumbnail.png"
+            },
+            {
+              title: "Spyder3D: 3D Printable Face Masks",
+              subtitle: "2020 Project",
+              link: "spyder3d.html",
+              img: "img/index/mask thumbnail.jpg"
+            }
+          ];
 
-            // Shuffle
-            const shuffled = filtered.sort(() => 0.5 - Math.random());
+          const currentPage = window.location.pathname.split("/").pop();
+          const filtered = works.filter(work => work.link !== currentPage);
+          const shuffled = filtered.sort(() => 0.5 - Math.random());
+          const selected = shuffled.slice(0, 3);
 
-            // Pick first 3
-            const selected = shuffled.slice(0, 3);
-
-            // Render
-            const container = document.getElementById("more-works");
-            selected.forEach(work => {
-              // Create HTML based on whether there's a photo credit, matching homepage structure exactly
-              let itemHtml;
-              if (work.credit) {
-                // Items with photo credits have thumbnail-container first, then work-info
-                itemHtml = `
-            <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="${work.link}" class="item-wrap fancybox">
-                <div class="thumbnail-container" style="position: relative; display: inline-block;">
-                  <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
-                  <span class="photo-credit">
-                    ${work.credit}
-                  </span>
-                </div>
-                <div class="work-info">
-                  <h3>${work.title}</h3>
-                  <span>${work.subtitle}</span>
-                </div>
-              </a>
-            </div>`;
-              } else {
-                // Items without credits have work-info first, then img
-                itemHtml = `
-            <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="${work.link}" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>${work.title}</h3>
-                  <span>${work.subtitle}</span>
-                </div>
+          const container = document.getElementById("more-works");
+          selected.forEach(work => {
+            let itemHtml;
+            if (work.credit) {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="thumbnail-container" style="position: relative; display: inline-block;">
                 <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
-              </a>
-            </div>`;
-              }
-
-              container.innerHTML += itemHtml;
-            });
-          </script>
-        </div>
+                <span class="photo-credit">${work.credit}</span>
+              </div>
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+            </a>
+          </div>`;
+            } else {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+              <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+            </a>
+          </div>`;
+            }
+            container.innerHTML += itemHtml;
+          });
+        </script>
+      </div>
     </div>
-</main>
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p class="mb-1">&copy; Copyright allisonyuh. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright allisonyuh. All Rights Reserved</p>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
-          <div class="col-sm-6 social text-md-right">
-            <a href="https://www.linkedin.com/in/allisonyuh/" target="blank"><span class="icofont-linkedin"></span></a>
-            <a href="mailto:allisonyuh@berkeley.com"><span class="icofont-envelope"></span></a>
-          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/allisonyuh/" target="blank"><span class="icofont-linkedin"></span></a>
+          <a href="mailto:allisonyuh@berkeley.com"><span class="icofont-envelope"></span></a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Vendor JS Files -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery/jquery-migrate.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/easing/easing.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
-    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="vendor/aos/aos.js"></script>
-    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="js/main.js"></script>
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
 
 </body>
 
