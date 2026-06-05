@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Navier - allisonyuh.</title>
+  <title>Excavate - allisonyuh.</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -13,33 +13,48 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
-    rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"> 
-   <!-- Bootstrap CSS File -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Template Name: MyPortfolio
-    Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com/
-  ======================================================= -->
+  <style>
+    .video-caption {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 8px;
+      font-style: italic;
+    }
+    .video-wrap {
+      width: 100%;
+    }
+    .video-wrap video {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .header-video-wrap {
+      display: inline-block;
+    }
+    .header-video-wrap video {
+      height: 350px;
+      border-radius: 4px;
+    }
+    .img-header-large {
+      height: 350px;
+      width: auto;
+      object-fit: cover;
+    }
+  </style>
 </head>
 
 <body>
-
 
   <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
     <div class="container py-2 py-md-3">
@@ -48,7 +63,6 @@
           <ul class="custom-menu d-flex">
             <li class="active"><a href="index.html">home</a></li>
             <li><a href="about.html">about</a></li>
-            <!--<li><a href="works.html">Works</a></li>-->
             <li><a href="contact.html">contact</a></li>
           </ul>
         </div>
@@ -59,65 +73,63 @@
   <nav class="navbar navbar-light custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">allisonyuh.</a>
-
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
       </a>
-
     </div>
   </nav>
 
-
-
   <main id="main">
+
+    <!-- Title -->
     <div class="site-section">
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-9" data-aos="fade-up">
             <div class="title-container">
-              <h2>Navier</h2> 
-              <a class="presentation-button" href="https://docs.google.com/presentation/d/1Mdydf5gbBWowTkivCfP6S36gN5-9dm23ETjuIKHzVc8/edit?usp=sharing">View Presentation</a>
+              <h2>Excavate</h2>
+              <a class="presentation-button" href="img/me130/ME130_Final_Project_Report.pdf" target="_blank">View Report</a>
             </div>
-            <p>Engineer for Hydrodynamic Sonar System Project</p> 
-            <span class="text-muted">Skills: Solidworks, Ansys CFD, DFMA, 3D Printing, Machining</span>
+            <p>ME130 Final Project — 6-Bar Scoop-and-Dump Excavation Mechanism</p>
+            <span class="text-muted">Skills: SolidWorks, Graphical Synthesis, Kinematic Analysis, Python, Laser Cutting, 3D Printing, Machining</span>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Header: Final Showcase Photo, CAD Animation, In Use -->
     <div class="site-section pb-0">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\final product.jpg" alt="Image" class="img-header">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-auto">
+            <img src="img/me130/Final Showcase Photo.JPG" alt="Excavate Final Showcase" class="img-header-large">
           </div>
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\sliding mech.jpg" alt="Image" class="img-header">
+          <div class="col-md-auto">
+            <div class="header-video-wrap">
+              <video controls playsinline>
+                <source src="img/me130/CAD Animation.mov" type="video/mp4">
+              </video>
+            </div>
           </div>
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img\navier\sonar image.jpg" alt="Image" class="img-header">
-          </div>
-          <div class="col-md-auto" data-aos="fade-up">
-            <img src="img/navier/sonar.jpg" alt="Image" class="img-header">
+          <div class="col-md-auto">
+            <img src="img/me130/In use.JPG" alt="Excavate In Use" class="img-header-large">
           </div>
         </div>
       </div>
     </div>
-    </div>
+
+    <!-- Project Overview -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Project Overview</h4>
-              <p> This was a project in collaboration with the electric hydro-foiling boat company, Navier. 
-                I worked as a Mechanical Engineering Consultant and was tasked to research, develop, and test a sonar enclosure and deployable mount. Our three main objectives were:
-                 <br><br>
-                 1. Create an acoustically transparent sonar pod fairing to house the sonar (Gramin PS51) + electronics <br>
-                 2. Design and machine an external and deployable mount for the sonar pod <br>
-                 3. Ensure the design is fully removable and is hydrodynamic
-                 <br><br>
-                 I was the responsible engineer for creating the sonar pod fairing that houses the forward facing sonar, and saw the design through to production and delivery.
+              <p>Excavate is a 6-bar scoop-and-dump excavation mechanism designed for ME130 (Kinematics and Dynamics of Machines), in collaboration with Diana Bolaños. The goal was to design and build a mechanism that allows a user to continuously drive a crank with one hand while raising and lowering the system vertically with the other using a rack-and-pinion.
+                <br><br>
+                The design had to satisfy several hard constraints: the scoop needed to move smoothly through the critical scoop-and-dump positions without any linkage rearrangement, all linkage lengths had to fit within an existing 8020 aluminum frame, and every part had to be manufacturable on the Jacobs Makerspace laser cutter or the Bambu H2C 3D print bed.
+                <br><br>
+                The final prototype achieves a prescribed scooping motion from a hand crank, with vertical adjustment via a rack-and-pinion system. Linkages were laser cut from 0.25" plywood, the scoop and handles were 3D printed in PLA, and the frame was assembled from aluminum 8020 extrusions from the Co-Design Lab.
               </p>
             </div>
           </div>
@@ -125,19 +137,75 @@
       </div>
     </div>
 
+    <!-- Labeled prototype -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7" data-aos="fade-up">
+            <img src="img/me130/Labeled Final Showcase Photo.png" alt="Labeled Final Prototype" class="img" style="width:100%;">
+          </div>
+          <div class="col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Design Methods — Graphical Synthesis</h4>
+              <p>We used three-position graphical synthesis to design the initial four-bar linkage, defining poses for the start of scooping, end of scooping, and the final dump position. Key free choices were scoop orientation at each pose and the spacing between poses.
+                <br><br>
+                After synthesis, we checked the Grashof condition. Since S+L > P+Q (18.726 > 17.568), the four-bar is a Class II non-Grashof rocker-rocker with no fully rotatable links. To enable continuous crank input, we added a dyad to complete the six-bar mechanism. We then used graphical dyad synthesis to place the input pivot.
+                <br><br>
+                Rather than applying the method of inversion for further tuning, we refined geometry through CAD iteration. A key finding: when coupler points were closer to collinear, synthesized fixed pivots moved farther apart. Using poses with more angular and positional variation produced more compact pivot locations and shorter linkage lengths — critical for fitting within the frame.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAD Iterations -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>CAD Iterations</h4>
+              <p>Multiple CAD iterations were produced during the graphical synthesis process, each testing different coupler pose choices and pivot placements. Early iterations with nearly collinear coupler points resulted in pivot locations too far apart to fit the frame. Iterating toward poses with greater angular separation converged on a compact geometry that satisfied all dimensional constraints.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <img src="img/me130/CAD Iterations.png" alt="CAD Synthesis Iterations" class="img" style="width:100%; padding-bottom: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graphical Synthesis CAD + Linkage Positions -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-start justify-content-center">
+          <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="100">
+            <img src="img/me130/Linkage Positions.png" alt="Three Critical Linkage Positions" style="width:100%; padding-bottom: 6px;">
+            <p class="text-muted" style="font-size:0.85rem; font-style:italic;">Three critical scoop poses: initial scooping, end of scooping, and dump</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linkage Lengths -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\petg.jpg" alt="Image" class="img">
+            <img src="img/me130/Linkage Lengths.png" alt="Labeled Linkage Lengths" class="img" style="padding-bottom: 10px;">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Material Selection</h4>
-              <p>Requirements for the sonar pod included acoustic transparency, corrosion resistance, mechanical strength, low resonance, and high strength-to-weight ratio. 
-                Since our sonar was a through-hull sonar, we decided to go with a material that was acoustiacally transparent and easy to use and manufacture with. From reading 
-                literature and doing research, we found that polymers were the best in terms of acoustic transparency and that composite materials would provide the highest strength-
-                to-weight ratio. We also found 3D printing to be the most viable manufacturing option for us, so we decided to use Carbon Fiber PETG.
+              <h4>Final Linkage Geometry</h4>
+              <p>The final six-bar mechanism used the following link lengths and fixed pivot distances, all determined through graphical synthesis and refined in CAD:
+                <br><br>
+                Dyad crank: 3.856 mm &nbsp;|&nbsp; Dyad coupler: 15.575 mm &nbsp;|&nbsp; Rocker: 10.472 mm &nbsp;|&nbsp; Crank: 14.726 mm &nbsp;|&nbsp; Coupler (scoop): 4.000 mm
+                <br><br>
+                Ground link O₂O₄: 7.096 mm &nbsp;|&nbsp; O₆O₂: 13.886 mm &nbsp;|&nbsp; O₄O₆: 15.611 mm &nbsp;|&nbsp; O₆O₄: 6.148 mm
+                <br><br>
+                Speed holes were added to all plywood links after initial synthesis to reduce weight and improve laser-cut manufacturability, while keeping the cross-sections structurally sound under the expected prototype loads.
               </p>
             </div>
           </div>
@@ -145,29 +213,21 @@
       </div>
     </div>
 
+    <!-- Vector Loop + Kinematic Analysis -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\eppler.png" alt="Image" class="img" style="padding-bottom: 10px;">
+            <img src="img/me130/Vector Loops Acceleration Analysis.png" alt="Vector Loop Diagram" class="img" style="padding-bottom: 10px;">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Hydrodynamics</h4>
-              <p>Our sonar fairing had to be hydrodynamic, yet strong and protect the electronics from its environment. Since the fairing would be mounted to the front of the boat and would 
-                be the first to break and water as it accelerates, we needed a fairing with a profile on both the XY-plane and the XZ-plane cross sections. We were also limited in its width by 
-                our 3D print bed's dimensions and had to opt for the smallest foil possible for our sonar.
+              <h4>Kinematic Analysis — Vector Loop Method</h4>
+              <p>Position, velocity, and angular acceleration analyses were performed using the vector loop equations derived from the six-bar geometry. The two loop equations are:
                 <br><br>
-                Since we did not want to generate any lift, we decided to go with a symmetrical foil type, modeling after the Eppler 862.
+                <strong>Loop 1:</strong> r₁ + r₄ = r₂ + r₃ &nbsp;&nbsp; <strong>Loop 2:</strong> r₆ + r₅ = r₆₁ + r₄₅
                 <br><br>
-                Since the sonar pod was quite tall, we decided to split the pod into 3 main sections that were all 3D printable and were secured using plastic welding.
-                <br><br>
-                <h6>CFD Simulations</h6>
-                We ran Ansys CFD simulations to validate our designs. Using both 3D and 2D simulations, we were able to optimize our drag coefficients and minimize pressure forces.
-                <br><br>
-                <h6>Design Changes</h6>
-                Originally, the design did not have a cutout for the sonar face, but after thorough testing, we found that better readings came from the design with a cut-away. Although it came with
-                the cost of increased drag, the tradeoff for better readings was decided as the best option by Navier engineers. Pictured is our final pod design.
+                Each was decomposed into real and imaginary components, then solved analytically in Python. The code sweeps the input angle θ₆ through a full rotation, solving each link's position, then uses those results to compute angular velocities and angular accelerations assuming a constant input of ω₆ = 1.0 rad/s and zero input angular acceleration.
               </p>
             </div>
           </div>
@@ -175,224 +235,263 @@
       </div>
     </div>
 
+    <!-- Angular Velocities + Accelerations -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <img src="img/me130/Angular Velocities vs Input Angle.png" alt="Angular Velocities vs Input Angle" style="width:100%; padding-bottom: 10px;">
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="img/me130/Angular Accelerations vs Input Angle.png" alt="Angular Accelerations vs Input Angle" style="width:100%; padding-bottom: 10px;">
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 d-flex align-items-center">
+            <div class="description">
+              <p>The angular velocity plot shows that the scoop link does not rotate at a constant rate even with constant crank input — expected behavior for a six-bar linkage. This natural variation means the scoop moves slower during collection and faster during dumping, which is desirable for excavation tasks. The angular acceleration plot shows the corresponding variation over one full input rotation, confirming smooth, continuous motion throughout the cycle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Static Force Analysis -->
     <div class="site-section pb-0">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img\navier\sliding mech.jpg" alt="Image" class="img" style="padding-bottom: 10px;">
+            <img src="img/me130/Static Force FBD.png" alt="Static Force Free Body Diagram" class="img" style="padding-bottom: 10px;">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
-              <h4>Mounting</h4>
-              <p>The pod was required to be consistently underwater throughout travel. Since the N30 is a foiling boat, it rises out of the water periodically, requiring the mount to be quite long. 
-                We used an aluminum extrusion to lock the entire assembly to the boat, 3D printed foil profiles for the length of the extrusion, and created a bracket mounting system to attach the 
-                pod to the angeled extrusion.
+              <h4>Static Force Analysis</h4>
+              <p>A static force analysis was performed at the initial scooping position, where the scoop experiences the highest resistance from the medium. Free body diagrams were drawn for each link and the resulting pin forces were solved analytically.
                 <br><br>
-                All of these pieces were made from 6061 Aluminum for its corrosion resistance and were machined in our school's shop.
+                The analysis estimated relative joint loading across the mechanism and confirmed that the selected hardware and plywood linkages were appropriate for prototype-level loads. As expected, the highest forces concentrated near the scoop and the adjacent transmission links, which directly resist the scooping load.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-<div class="site-section pb-0" style="margin-top: 10vh;">
-        <div class="container">
-          <div class="row justify-content-start text-left mb-4">
-            <div class="col-5">
-              <h3 class="h3 heading">More Works</h3>
+
+    <!-- Forces output -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Calculated Force Outputs</h4>
+              <p>Pin force magnitudes at each joint were computed from the static analysis and are shown in the force diagram. These values validated that the plywood links, PLA printed scoop, and off-the-shelf M3/M5 stainless steel hardware were all appropriately sized for the expected prototype loads. The linear guide rail (stainless steel, sourced from Amazon) and 8020 extrusion frame provided more than sufficient structural margin.
+              </p>
             </div>
           </div>
-
-          <div class="row" id="more-works"></div>
-          <script>
-            const works = [
-              {
-                title: "Apple",
-                subtitle: "Spring 2025 Co-Op",
-                link: "apple.html",
-                img: "img/index/apple thumbnail.jpg",
-                credit: "Photo: Alireza Khoddam"
-              },
-              {
-                title: "Arc Boat Company",
-                subtitle: "Summer 2024 Internship",
-                link: "arc.html",
-                img: "img/index/arc thumbnail.png",
-                credit: "Photo: Arc Team"
-              },
-              {
-                title: "Eko Health",
-                subtitle: "Spring 2024 Project",
-                link: "eko.html",
-                img: "img/index/eko thumbnail.png"
-              },
-              {
-                title: "Tesla",
-                subtitle: "Fall 2024 Project",
-                link: "tesla.html",
-                img: "img/index/tesla thumbnail.jpg",
-                credit: "Photo: Annegret Hilse"
-              },
-              {
-                title: "Navier",
-                subtitle: "Spring 2024 Project",
-                link: "navier.html",
-                img: "img/index/navier thumbnail.jpg"
-              },
-              {
-                title: "Sensible Robotics",
-                subtitle: "Fall 2023 Project",
-                link: "sensible.html",
-                img: "img/index/sensible thumbnail.jpg"
-              },
-              {
-                title: "Bold Reuse",
-                subtitle: "Fall 2024 Project",
-                link: "bold.html",
-                img: "img/index/bold thumbnail.jpg",
-                credit: "Photo: Bold Reuse Team"
-              },
-              {
-                title: "NASA Techrise Challenge",
-                subtitle: "2021-2023 Winning Project",
-                link: "nasa.html",
-                img: "img/index/nasa thumbnail.png"
-              },
-              {
-                title: "Boeing: B-Lift",
-                subtitle: "2023 CADathon Winning Project",
-                link: "boeing.html",
-                img: "img/index/blift thumbnail.png"
-              },
-              {
-                title: "EnableTech: Mobile Platform",
-                subtitle: "Fall 2023 Project",
-                link: "enabletech.html",
-                img: "img/index/mobile platform thumbnail.png"
-              },
-              {
-                title: "Google X Moonshot: Tidal",
-                subtitle: "Fall 2023 Project",
-                link: "tidal.html",
-                img: "img/index/tidal thumbnail.jpg",
-                credit: "Photo: Tidal Team"
-              },
-              {
-                title: "Keck Graduate Institute: Aran Lab",
-                subtitle: "Summer 2022 Internship",
-                link: "KGI.html",
-                img: "img/index/kgi thumbnail.jpg"
-              },
-              {
-                title: "E26: Wind Turbine",
-                subtitle: "Spring 2024 Project",
-                link: "e26.html",
-                img: "img/index/wind turbine thumbnail.png"
-              },
-              {
-                title: "SkillsUSA: Arm Stand Aid",
-                subtitle: "2022 Winning Project",
-                link: "skillsusa.html",
-                img: "img/index/skillsusa thumbnail.png"
-              },
-              {
-                title: "Spyder3D: 3D Printable Face Masks",
-                subtitle: "2020 Project",
-                link: "spyder3d.html",
-                img: "img/index/mask thumbnail.jpg"
-              }
-            ];
-
-
-            // Get current page
-            const currentPage = window.location.pathname.split("/").pop();
-
-            // Filter out the current work
-            const filtered = works.filter(work => work.link !== currentPage);
-
-            // Shuffle
-            const shuffled = filtered.sort(() => 0.5 - Math.random());
-
-            // Pick first 3
-            const selected = shuffled.slice(0, 3);
-
-            // Render
-            const container = document.getElementById("more-works");
-            selected.forEach(work => {
-              // Create HTML based on whether there's a photo credit, matching homepage structure exactly
-              let itemHtml;
-              if (work.credit) {
-                // Items with photo credits have thumbnail-container first, then work-info
-                itemHtml = `
-            <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="${work.link}" class="item-wrap fancybox">
-                <div class="thumbnail-container" style="position: relative; display: inline-block;">
-                  <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
-                  <span class="photo-credit">
-                    ${work.credit}
-                  </span>
-                </div>
-                <div class="work-info">
-                  <h3>${work.title}</h3>
-                  <span>${work.subtitle}</span>
-                </div>
-              </a>
-            </div>`;
-              } else {
-                // Items without credits have work-info first, then img
-                itemHtml = `
-            <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="${work.link}" class="item-wrap fancybox">
-                <div class="work-info">
-                  <h3>${work.title}</h3>
-                  <span>${work.subtitle}</span>
-                </div>
-                <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
-              </a>
-            </div>`;
-              }
-
-              container.innerHTML += itemHtml;
-            });
-          </script>
+          <div class="col-md-5" data-aos="fade-up">
+            <img src="img/me130/Forces.png" alt="Force Analysis Outputs" class="img" style="padding-bottom: 10px;">
+          </div>
         </div>
+      </div>
     </div>
-</main>
-    <footer class="footer" role="contentinfo">
+
+    <!-- Animation video -->
+    <div class="site-section pb-0">
       <div class="container">
+        <div class="row mb-3" data-aos="fade-up">
+          <div class="col-12">
+            <h4>Mechanism Animation</h4>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-sm-6">
-            <p class="mb-1">&copy; Copyright allisonyuh. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <div class="col-md-8 offset-md-2 mb-4" data-aos="fade-up">
+            <div class="video-wrap">
+              <video controls playsinline>
+                <source src="img/me130/Animation Final.mp4" type="video/mp4">
+              </video>
+              <p class="video-caption">Python-animated six-bar mechanism simulation — sweeping through one full crank rotation, showing position, angular velocity, and angular acceleration of all links in real time</p>
             </div>
-          </div>
-          <div class="col-sm-6 social text-md-right">
-            <a href="https://www.linkedin.com/in/allisonyuh/" target="blank"><span class="icofont-linkedin"></span></a>
-            <a href="mailto:allisonyuh@berkeley.com"><span class="icofont-envelope"></span></a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <!-- Vendor JS Files -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/jquery/jquery-migrate.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/easing/easing.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
-    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
-    <script src="vendor/aos/aos.js"></script>
-    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <!-- More Works -->
+    <div class="site-section pb-0" style="margin-top: 10vh;">
+      <div class="container">
+        <div class="row justify-content-start text-left mb-4">
+          <div class="col-5">
+            <h3 class="h3 heading">More Works</h3>
+          </div>
+        </div>
 
-    <!-- Template Main JS File -->
-    <script src="js/main.js"></script>
+        <div class="row" id="more-works"></div>
+        <script>
+          const works = [
+            {
+              title: "Apple",
+              subtitle: "Spring 2025 Co-Op",
+              link: "apple.html",
+              img: "img/index/apple thumbnail.jpg",
+              credit: "Photo: Alireza Khoddam"
+            },
+            {
+              title: "Arc Boat Company",
+              subtitle: "Summer 2024 Internship",
+              link: "arc.html",
+              img: "img/index/arc thumbnail.png",
+              credit: "Photo: Arc Team"
+            },
+            {
+              title: "Eko Health",
+              subtitle: "Spring 2024 Project",
+              link: "eko.html",
+              img: "img/index/eko thumbnail.png"
+            },
+            {
+              title: "Tesla",
+              subtitle: "Fall 2024 Project",
+              link: "tesla.html",
+              img: "img/index/tesla thumbnail.jpg",
+              credit: "Photo: Annegret Hilse"
+            },
+            {
+              title: "Navier",
+              subtitle: "Spring 2024 Project",
+              link: "navier.html",
+              img: "img/index/navier thumbnail.jpg"
+            },
+            {
+              title: "Sensible Robotics",
+              subtitle: "Fall 2023 Project",
+              link: "sensible.html",
+              img: "img/index/sensible thumbnail.jpg"
+            },
+            {
+              title: "Bold Reuse",
+              subtitle: "Fall 2024 Project",
+              link: "bold.html",
+              img: "img/index/bold thumbnail.jpg",
+              credit: "Photo: Bold Reuse Team"
+            },
+            {
+              title: "NASA Techrise Challenge",
+              subtitle: "2021-2023 Winning Project",
+              link: "nasa.html",
+              img: "img/index/nasa thumbnail.png"
+            },
+            {
+              title: "Boeing: B-Lift",
+              subtitle: "2023 CADathon Winning Project",
+              link: "boeing.html",
+              img: "img/index/blift thumbnail.png"
+            },
+            {
+              title: "EnableTech: Mobile Platform",
+              subtitle: "Fall 2023 Project",
+              link: "enabletech.html",
+              img: "img/index/mobile platform thumbnail.png"
+            },
+            {
+              title: "Google X Moonshot: Tidal",
+              subtitle: "Fall 2023 Project",
+              link: "tidal.html",
+              img: "img/index/tidal thumbnail.jpg",
+              credit: "Photo: Tidal Team"
+            },
+            {
+              title: "Keck Graduate Institute: Aran Lab",
+              subtitle: "Summer 2022 Internship",
+              link: "KGI.html",
+              img: "img/index/kgi thumbnail.jpg"
+            },
+            {
+              title: "E26: Wind Turbine",
+              subtitle: "Spring 2024 Project",
+              link: "e26.html",
+              img: "img/index/wind turbine thumbnail.png"
+            },
+            {
+              title: "SkillsUSA: Arm Stand Aid",
+              subtitle: "2022 Winning Project",
+              link: "skillsusa.html",
+              img: "img/index/skillsusa thumbnail.png"
+            },
+            {
+              title: "Spyder3D: 3D Printable Face Masks",
+              subtitle: "2020 Project",
+              link: "spyder3d.html",
+              img: "img/index/mask thumbnail.jpg"
+            }
+          ];
+
+          const currentPage = window.location.pathname.split("/").pop();
+          const filtered = works.filter(work => work.link !== currentPage);
+          const shuffled = filtered.sort(() => 0.5 - Math.random());
+          const selected = shuffled.slice(0, 3);
+
+          const container = document.getElementById("more-works");
+          selected.forEach(work => {
+            let itemHtml;
+            if (work.credit) {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="thumbnail-container" style="position: relative; display: inline-block;">
+                <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+                <span class="photo-credit">${work.credit}</span>
+              </div>
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+            </a>
+          </div>`;
+            } else {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+              <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+            </a>
+          </div>`;
+            }
+            container.innerHTML += itemHtml;
+          });
+        </script>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright allisonyuh. All Rights Reserved</p>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/allisonyuh/" target="blank"><span class="icofont-linkedin"></span></a>
+          <a href="mailto:allisonyuh@berkeley.com"><span class="icofont-envelope"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
