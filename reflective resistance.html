@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reflective Resistance - allisonyuh.</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    .video-caption {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 8px;
+      font-style: italic;
+    }
+    .video-wrap {
+      width: 100%;
+    }
+    .video-wrap video {
+      width: 100%;
+      border-radius: 4px;
+    }
+    .header-video-wrap {
+      display: inline-block;
+    }
+    .header-video-wrap video {
+      height: 250px;
+      border-radius: 4px;
+    }
+    .img-header-large {
+      height: 250px;
+      width: auto;
+      object-fit: cover;
+    }
+    .rr-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .rr-table th,
+    .rr-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-3">
+      <div class="row align-items-start">
+        <div class="col-md-4">
+          <ul class="custom-menu d-flex">
+            <li class="active"><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">allisonyuh.</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Title -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-12" data-aos="fade-up">
+            <div class="title-container">
+              <h2>Reflective Resistance</h2>
+              <a class="presentation-button" href="img/reflective resistance/Reflective Resistance.pdf" target="_blank">View Publication</a>
+            </div>
+            <p>UC Berkeley CoDesign Lab — Design for Sustainable Behavior in Generative AI Interactions</p>
+            <span class="text-muted">Published at ASME IDETC 2026 (IDETC2026-193320) &mdash; Second Author, with Nicole Goridkov, Diana Bolaños, and Prof. Kosa Goucher-Lambert</span>
+            <br>
+            <span class="text-muted">Skills: Research Through Design, Embedded Systems (Arduino/PWM), Soft Pneumatic Actuation, Chrome Extension Development, CAD, DXF/G-code Toolpath Generation, 3D Printing &amp; Laser Cutting, User Study Design, Eye-Tracking, Thematic Analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header: Team Photo, Demo Video, Prototype Photo — forced to a single row -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-auto">
+            <img src="img/reflective resistance/header2.jpg" alt="team pic" class="img-header-large">
+          </div>
+          <div class="col-md-auto">
+            <div class="header-video-wrap">
+              <video controls playsinline>
+                <source src="img/reflective resistance/Reflective Resistance.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="col-md-auto">
+            <img src="img/reflective resistance/header1.png" alt="Keyboard Prototype" class="img-header-large">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Project Overview</h4>
+              <p>Reflective Resistance is a research through design project completed with the UC Berkeley CoDesign Lab under Prof. Kosa Goucher-Lambert, in collaboration with Nicole Goridkov (lead) and Diana Bolaños. The work was published at the 2026 ASME International Design Engineering Technical Conferences (IDETC), and explores how "design for sustainable behavior" (DfSB) strategies can be embedded into generative AI (GenAI) interactions to make their otherwise invisible environmental costs tangible.
+                <br><br>
+                We designed and built two artifacts that apply distinct DfSB strategies: a browser-based <em>eco-feedback</em> Chrome extension that visualizes real-time energy consumption during ChatGPT use, and a physical, <em>eco-steering</em> keyboard that dynamically modulates typing resistance in real time based on GenAI token usage. My primary contribution was leading the mechanical design and fabrication of the physical keyboard prototype, including the pneumatic bladder mechanism and the open-source heat-sealing fabrication method used to produce it.
+                <br><br>
+                The two artifacts were deployed together in a within-subjects user study (n=30), examining how physically-augmented versus purely digital feedback shapes GenAI usage patterns, cognitive workload, gaze attention, and reflective engagement with the environmental cost of AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Framing -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7" data-aos="fade-up">
+            <img src="img/reflective resistance/Figure 1 V3.png" alt="Overview of Artifacts" class="img" style="width:100%;">
+          </div>
+          <div class="col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Design Framing — Eco-Feedback &amp; Eco-Steering</h4>
+              <p>Our approach drew on two DfSB intervention strategies. <em>Eco-feedback</em> informs users clearly about what they are doing through real-time data, while <em>eco-steering</em> goes a step further by structuring the interaction so unsustainable behavior becomes physically harder to perform, while preserving user agency.
+                <br><br>
+                We used Pierce's counterfunctional design schema to frame the keyboard's physical intervention: normally, a user <em>can</em> engage in high-frequency, low-deliberation prompting; our device ensures a user <em>can not</em> sustain that behavior without expending physical effort; as a result, the user is pushed to engage with GenAI more deliberately and reflectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Digital Prototype -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Digital Prototype — Eco-Feedback Extension</h4>
+              <p>We built a Chrome extension that overlays real-time energy metrics directly onto the ChatGPT interface. Once a prompt is submitted, the overlay updates with session time, a color-graded resistance status bar, and energy-use equivalencies (iPhone battery charges, Google searches, minutes of LED light, and estimated cost), alongside token counts per query and per session.
+                <br><br>
+                Tokens were estimated using the standard heuristic of one token per four characters, with a 60x multiplier applied to prompts that generated images, reflecting the substantially higher computational cost of image inference relative to text.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <img src="img/reflective resistance/BE Labelled.png" alt="Browser Extension Labeled" class="img" style="width:100%; padding-bottom: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Physical Prototype Mechanism -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Image pair -->
+          <div class="col-md-7" data-aos="fade-up">
+            <div class="row align-items-center">
+              
+              <div class="col-7">
+                <img src="img/reflective resistance/Keyboard Exploded.png"
+                    alt="Keyboard Exploded View"
+                    class="img-fluid w-100">
+              </div>
+
+              <div class="col-5">
+                <img src="img/reflective resistance/inflation V5.png"
+                    alt="Bladder Inflation States"
+                    class="img-fluid w-100">
+              </div>
+
+            </div>
+
+            <p class="img-caption">
+              Exploded assembly (left) and the bladder's deflated vs. fully inflated states
+              in the key-travel path (right, keycaps removed for demo)
+            </p>
+          </div>
+
+          <!-- Description -->
+          <div class="col-md-5 d-flex align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="100">
+            <div class="description">
+              <h4>Physical Prototype — Eco-Steering Keyboard</h4>
+              <p>
+                The physical prototype is a mechanical tactile keyboard augmented with an
+                inflatable Thermoplastic Polyurethane (TPU) bladder positioned beneath the
+                key switches. As GenAI token usage accumulates, the bladder inflates to exert
+                variable opposing resistance against the user's keystrokes — to our knowledge,
+                the first mechanism to dynamically vary typing resistance mid-keystroke, rather
+                than relying on static keycap substitution.
+                <br><br>
+                Bladder inflation is driven by a motor-controlled air supply and Arduino
+                microcontroller, which receives live token usage data from the Chrome extension
+                and modulates air pressure via pulse-width-modulated (PWM) motor control.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Manufacturing / Fabrication Deep-Dive -->
+    <div class="site-section pb-0">
+      <div class="container">
+
+        <!-- Section intro -->
+        <div class="row align-items-center">
+          <div class="col-md-12" data-aos="fade-up">
+            <div class="description">
+              <h4>Manufacturing — Bladder Fabrication &amp; Assembly</h4>
+              <p>
+                I led the design and fabrication of the pneumatic bladder mechanism,
+                developing an open-source method for using an FDM 3D printer as a precision
+                heat sealer. Existing CNC-guided heat-sealing approaches for thin film lacked
+                a fully open-source, geometry-agnostic pipeline, so I built a custom in-house
+                G-code generation tool that accepts arbitrary bladder geometry in DXF format
+                and outputs finalized G-code executable directly on a standard FDM printer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Images + Description -->
+        <div class="row align-items-center">
+
+          <!-- Image pair -->
+          <div class="col-md-7" data-aos="fade-up">
+            <div class="row align-items-center">
+
+              <div class="col-12 d-flex justify-content-center">
+                <img src="img/reflective resistance/Fabrication overview V0.png"
+                    alt="Fabrication Overview"
+                    class="img-fluid"
+                    style="width: 100%; padding-bottom: 10px;">
+              </div>
+
+              <div class="col-12 d-flex justify-content-center">
+                <img src="img/reflective resistance/3dprinter.JPG"
+                    alt="3D Printer Heat Sealing"
+                    class="img-fluid"
+                    style="width: 50%;">
+              </div>
+
+            </div>
+
+            <p class="img-caption">
+              Fabrication overview and 3D printer heat sealing.
+            </p>
+          </div>
+
+          <!-- Description -->
+          <div class="col-md-5 d-flex align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="100">
+            <div class="description">
+              <p>
+                <strong>Bladder fabrication.</strong> The bladder was fabricated from
+                double-layered 0.1mm TPU film, heat-sealed to conform to the negative
+                geometry of the keyboard's underside. Operated without filament, the
+                printer's heated nozzle served as a controlled thermal bonding tool guided
+                along predefined seam paths designed in CAD, exported to DXF, and processed
+                through the custom toolpath pipeline. This method produced far more repeatable,
+                consistent seam patterns than manual heat sealing, and the programmable workflow
+                allowed systematic variation of temperature, travel speed, and pressure depth.
+                Due to print-bed size constraints, the bladder was fabricated in three parts
+                and subsequently joined. The full method is documented and shared publicly for
+                future researchers working with soft pneumatic interfaces.
+
+                <br><br>
+
+                <strong>Assembly.</strong> The fabricated bladder was trimmed to accommodate
+                the keycaps and switches, then connected to an air supply via flexible silicone
+                tubing and 3D-printed valve splitters, sealed with rubber bands and secured
+                with 3D-printed retaining rings. The air supply, motor driver, and Arduino
+                microcontroller are housed in a 3D-printed enclosure, powered via a wall-connected
+                supply, with both the Arduino and keyboard interfacing to the host laptop over USB.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- System Overview / Electronics -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image pair -->
+          <div class="col-md-7" data-aos="fade-up">
+            <div class="row align-items-center">
+              <div class="col-7">
+                <img src="img/reflective resistance/System Overview V2.png"
+                    alt="System Overview Diagram"
+                    class="img-fluid w-100">
+              </div>
+              <div class="col-5">
+                <img src="img/reflective resistance/wiring diagram.png"
+                    alt="Wiring Diagram"
+                    class="img-fluid w-100">
+              </div>
+
+            </div>
+            <p class="img-caption">
+              System feedback loop (left) and wiring of the Arduino, motor driver,
+              and pneumatic air supply (right)
+            </p>
+          </div>
+          <!-- Description -->
+          <div class="col-md-5 d-flex align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="100">
+            <div class="description">
+              <h4>Control Pipeline — Token to Physical Feedback</h4>
+              <p>
+                A three-stage pipeline translates GenAI token usage into physical keyboard resistance:
+                <br>
+                <strong>1. Token calculation</strong> — the extension's content script estimates token
+                count per prompt (1 token ≈ 4 characters), with multipliers applied for image generation,
+                accumulating into a running session total.
+                <br>
+                <strong>2. Resistance mapping</strong> — accumulated tokens are mapped linearly to a
+                0–100% resistance value (capped at 90 tokens), decaying 1.25% every 5 seconds during
+                idle periods to mimic a computational "cooldown."
+                <br>
+                <strong>3. Serial transmission</strong> — the resistance value is relayed through a
+                local Node.js/Express bridge server to the Arduino over USB, which maps it to PWM duty
+                cycle (60–100%) with a ramped step size for smooth motor acceleration and a 31kHz
+                switching frequency to minimize audible motor whine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- User Study Methods -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7" data-aos="fade-up">
+            <img src="img/reflective resistance/user study workflow v3.png" alt="User Study Workflow" style="width:100%; padding-bottom: 10px;">
+          </div>
+          <div class="col-md-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>User Study — Method &amp; Protocol</h4>
+              <p>We ran an IRB-approved, within-subjects study with 30 participants to observe how each modality shapes AI use, perceived value of AI assistance, and moments of reflection. Participants completed a pre-survey, eye-tracking calibration, and a tutorial, then completed a ChatGPT-based image storyboarding task under two counterbalanced conditions: digital feedback only (browser extension), and physical feedback (browser extension + resistive keyboard). Participants thought aloud throughout, and completed post-task NASA TLX workload surveys, reflection questionnaires, and a closing interview.
+                <br><br>
+                Screen capture, audio, and gaze data (via the Beam Eye Tracker) were collected throughout, enabling both quantitative analysis of prompting behavior and a Locus-of-Attention Index (LAI) tracking how often participants' gaze fell on the feedback display versus the rest of the screen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prompting Behavior Results -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-start justify-content-center">
+          <div class="col-md-9 text-center" data-aos="fade-up">
+            <img src="img/reflective resistance/LLM Interaction Data Graphs/llm interactions big font.png" alt="Prompting Behavior Across Conditions" style="width:100%; padding-bottom: 6px;">
+            <p class="text-muted" style="font-size:0.85rem; font-style:italic;">Distribution of prompt length, token count, and prompts per session across both conditions</p>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 d-flex align-items-center">
+            <div class="description">
+              <p>Across 306 logged prompts, aggregate prompting metrics showed limited differences between conditions — prompt length and prompt count were not significantly different, though prompt tokens declined slightly but significantly in the physical condition. Notably, variance was consistently lower in the physical condition across all three metrics, suggesting the resistive keyboard nudged participants toward more consistent, deliberate prompting behavior, even where central tendencies didn't shift dramatically.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attention / Gaze Results -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <img src="img/reflective resistance/LAI over time w CI.png" alt="Locus of Attention Index Over Time" style="width:100%; padding-bottom: 10px;">
+          </div>
+          <div class="col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Attention Over Time</h4>
+              <p>Gaze tracking revealed that attention in the purely digital condition remained stable throughout the task, directed consistently away from the browser extension. In the physical condition, attention was similarly stable through the first half of the task but declined significantly in the second half — a shift that may reflect participants checking the energy tracker more as resistance increased and they began to feel its effects directly at the keyboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NASA TLX Workload -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Perceived Workload</h4>
+              <p>Post-task NASA TLX surveys showed the physical condition imposed significantly higher Mental Demand, Physical Demand, Effort, and Frustration than the digital condition, while Time Pressure and Performance were statistically indistinguishable between conditions. Despite this added burden, participants in the physical condition reported stronger agreement that the feedback prompted deliberate reflection and helped them maintain an overview of their GenAI use.</p>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <img src="img/reflective resistance/NASA_TLX_big font.png" alt="NASA TLX Results" class="img" style="width:100%; padding-bottom: 10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qualitative Themes -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row mb-3" data-aos="fade-up">
+          <div class="col-12">
+            <h4>Qualitative Themes</h4>
+            <p>Thematic analysis of think-aloud and interview transcripts surfaced 79 initial codes, refined into recurring themes around how and why participants reflected on their GenAI use:</p>
+          </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12" style="overflow-x:auto;">
+            <table class="rr-table">
+              <thead>
+                <tr>
+                  <th style="width:22%">Theme</th>
+                  <th style="width:28%">Subtheme</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4"><strong>Prompting reflection</strong></td>
+                  <td>Haptic</td>
+                  <td>Keyboard resistance physically interrupting or slowing the act of typing</td>
+                </tr>
+                <tr>
+                  <td>Digital</td>
+                  <td>The visual energy tracker drawing attention to consumption during prompting</td>
+                </tr>
+                <tr>
+                  <td>Audio</td>
+                  <td>Motor noise creating an auditory signal of computational effort</td>
+                </tr>
+                <tr>
+                  <td>Mental</td>
+                  <td>The cognitive load of overcoming the hindrance itself prompting pause</td>
+                </tr>
+                <tr>
+                  <td rowspan="2"><strong>Behavior change strategies</strong></td>
+                  <td>Tradeoffs</td>
+                  <td>Weighing the cost of further prompts against another factor</td>
+                </tr>
+                <tr>
+                  <td>Prompt modifications &amp; intentionality</td>
+                  <td>Changes to how prompt composition was approached</td>
+                </tr>
+                <tr>
+                  <td rowspan="2"><strong>Ownership</strong></td>
+                  <td>Guilt and anxiety</td>
+                  <td>Emotional discomfort arising from seeing one's own specific consumption quantified</td>
+                </tr>
+                <tr>
+                  <td>Consequences</td>
+                  <td>Environmental and resource costs that once felt distant becoming personal</td>
+                </tr>
+                <tr>
+                  <td rowspan="2"><strong>Digital feedback &amp; intangibility</strong></td>
+                  <td>Unobtrusive nature</td>
+                  <td>The extension's peripheral placement limiting how much it registered during tasks</td>
+                </tr>
+                <tr>
+                  <td>Intangible metrics</td>
+                  <td>Difficulty making sense of the raw numbers without a meaningful frame of reference</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discussion / Takeaways -->
+    <div class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="description">
+              <h4>Discussion &amp; Takeaways</h4>
+              <p>While aggregate prompting behavior changed only modestly across conditions, interviews revealed that many participants meaningfully shifted how they thought about their GenAI use — negotiating real tradeoffs between output quality and environmental cost, and describing new feelings of ownership over their consumption. Augmenting digital eco-feedback with physical, embodied friction surfaced distinct patterns of reflection not observed with digital feedback alone, suggesting the two modalities are complementary rather than interchangeable. At the same time, several participants noted that current AI interfaces offer little scaffolding to act on this new awareness, pointing to an open gap between environmental awareness and actionable tools in sustainable AI interface design.
+                <br><br>
+                This project was my first deep dive into soft pneumatic actuation and closed-loop physical/digital systems, and pushed my fabrication skills into new territory — particularly developing the open-source 3D-printer-as-heat-sealer method, which is documented for other researchers working with thin-film soft actuators.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More Works -->
+    <div class="site-section pb-0" style="margin-top: 10vh;">
+      <div class="container">
+        <div class="row justify-content-start text-left mb-4">
+          <div class="col-5">
+            <h3 class="h3 heading">More Works</h3>
+          </div>
+        </div>
+
+        <div class="row" id="more-works"></div>
+        <script>
+          const works = [
+            {
+              title: "Apple",
+              subtitle: "Spring 2025 Co-Op",
+              link: "apple.html",
+              img: "img/index/apple thumbnail.jpg",
+              credit: "Photo: Alireza Khoddam"
+            },
+            {
+              title: "Arc Boat Company",
+              subtitle: "Summer 2024 Internship",
+              link: "arc.html",
+              img: "img/index/arc thumbnail.png",
+              credit: "Photo: Arc Team"
+            },
+            {
+              title: "Eko Health",
+              subtitle: "Spring 2024 Project",
+              link: "eko.html",
+              img: "img/index/eko thumbnail.png"
+            },
+            {
+              title: "Tesla",
+              subtitle: "Fall 2024 Project",
+              link: "tesla.html",
+              img: "img/index/tesla thumbnail.jpg",
+              credit: "Photo: Annegret Hilse"
+            },
+            {
+              title: "Navier",
+              subtitle: "Spring 2024 Project",
+              link: "navier.html",
+              img: "img/index/navier thumbnail.jpg"
+            },
+            {
+              title: "Sensible Robotics",
+              subtitle: "Fall 2023 Project",
+              link: "sensible.html",
+              img: "img/index/sensible thumbnail.jpg"
+            },
+            {
+              title: "Bold Reuse",
+              subtitle: "Fall 2024 Project",
+              link: "bold.html",
+              img: "img/index/bold thumbnail.jpg",
+              credit: "Photo: Bold Reuse Team"
+            },
+            {
+              title: "NASA Techrise Challenge",
+              subtitle: "2021-2023 Winning Project",
+              link: "nasa.html",
+              img: "img/index/nasa thumbnail.png"
+            },
+            {
+              title: "Boeing: B-Lift",
+              subtitle: "2023 CADathon Winning Project",
+              link: "boeing.html",
+              img: "img/index/blift thumbnail.png"
+            },
+            {
+              title: "EnableTech: Mobile Platform",
+              subtitle: "Fall 2023 Project",
+              link: "enabletech.html",
+              img: "img/index/mobile platform thumbnail.png"
+            },
+            {
+              title: "Google X Moonshot: Tidal",
+              subtitle: "Fall 2023 Project",
+              link: "tidal.html",
+              img: "img/index/tidal thumbnail.jpg",
+              credit: "Photo: Tidal Team"
+            },
+            {
+              title: "Keck Graduate Institute: Aran Lab",
+              subtitle: "Summer 2022 Internship",
+              link: "KGI.html",
+              img: "img/index/kgi thumbnail.jpg"
+            },
+            {
+              title: "E26: Wind Turbine",
+              subtitle: "Spring 2024 Project",
+              link: "e26.html",
+              img: "img/index/wind turbine thumbnail.png"
+            },
+            {
+              title: "SkillsUSA: Arm Stand Aid",
+              subtitle: "2022 Winning Project",
+              link: "skillsusa.html",
+              img: "img/index/skillsusa thumbnail.png"
+            },
+            {
+              title: "Spyder3D: 3D Printable Face Masks",
+              subtitle: "2020 Project",
+              link: "spyder3d.html",
+              img: "img/index/mask thumbnail.jpg"
+            },
+            {
+              title: "Excavate",
+              subtitle: "ME130 Final Project",
+              link: "excavate.html",
+              img: "img/index/excavate thumbnail.png"
+            }
+          ];
+
+          const currentPage = window.location.pathname.split("/").pop();
+          const filtered = works.filter(work => work.link !== currentPage);
+          const shuffled = filtered.sort(() => 0.5 - Math.random());
+          const selected = shuffled.slice(0, 3);
+
+          const container = document.getElementById("more-works");
+          selected.forEach(work => {
+            let itemHtml;
+            if (work.credit) {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="thumbnail-container" style="position: relative; display: inline-block;">
+                <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+                <span class="photo-credit">${work.credit}</span>
+              </div>
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+            </a>
+          </div>`;
+            } else {
+              itemHtml = `
+          <div class="item engineering design col-sm-6 col-md-4 col-lg-4 mb-4">
+            <a href="${work.link}" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>${work.title}</h3>
+                <span>${work.subtitle}</span>
+              </div>
+              <img class="img-fluid" src="${work.img}" alt="${work.title} Thumbnail">
+            </a>
+          </div>`;
+            }
+            container.innerHTML += itemHtml;
+          });
+        </script>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright allisonyuh. All Rights Reserved</p>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-sm-6 social text-md-right">
+          <a href="https://www.linkedin.com/in/allisonyuh/" target="blank"><span class="icofont-linkedin"></span></a>
+          <a href="mailto:allisonyuh@berkeley.com"><span class="icofont-envelope"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/easing/easing.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
