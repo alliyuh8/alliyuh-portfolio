@@ -17,7 +17,9 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,20 +34,25 @@
   <link href="css/style.css" rel="stylesheet">
 
   <style>
-    .skip-header-frame {
-      width: 100%;
-      height: 360px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f7f7f7;
+    .skip-header-row {
+      gap: 0px;
     }
 
-    .skip-header-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .skip-header-col {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .skip-header-frame {
+      display: flex;
+    }
+
+    .skip-header-img {
+      height: 300px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
     }
 
     .skip-section-img {
@@ -125,7 +132,8 @@
               <a class="presentation-button" href="img/skip/Project Stardust.pdf" target="_blank">View Presentation</a>
             </div>
             <p>Technical Advisor for Wearable Maternal Health Monitoring</p>
-            <span class="text-muted">Skills: Technical Advising, Onshape, Wearable Product Design, Rapid Prototyping, Soft Goods Prototyping, User Research, Figma</span>
+            <span class="text-muted">Skills: Onshape, Rapid Prototyping, Soft Goods Prototyping, User Research,
+              Figma</span>
           </div>
         </div>
       </div>
@@ -133,15 +141,14 @@
 
     <div class="site-section pb-0">
       <div class="container">
-        <div class="row align-items-stretch">
-          <div class="col-md-6 mb-3" data-aos="fade-up">
-            <div class="skip-header-frame">
-              <img src="img/skip/Header 2.JPG" alt="Project Stardust physical wearable prototype">
-            </div>
+        <div class="row justify-content-center align-items-center flex-nowrap skip-header-row" data-aos="fade-up">
+          <div class="skip-header-frame">
+            <img src="img/skip/Header 2.JPG" alt="Project Stardust wearable concept" class="skip-header-img">
           </div>
-          <div class="col-md-6 mb-3" data-aos="fade-up">
+          <div class="col skip-header-col">
             <div class="skip-header-frame">
-              <img src="img/skip/belt mockup.png" alt="Project Stardust monitoring belt concept">
+              <img src="img/skip/belt mockup.png" alt="Project Stardust monitoring belt concept"
+                class="skip-header-img">
             </div>
           </div>
         </div>
@@ -155,11 +162,15 @@
             <div class="description">
               <h4>Project Overview</h4>
               <p>
-                Project Stardust was developed in collaboration with Skip as an at-home wearable concept for maternal health monitoring.
-                I served as a technical advisor to a cross-functional team of engineers and designers, helping translate user needs into
-                the mechanical architecture of the belt, sensor-array packaging, physical prototyping strategy, and companion-app experience.
+                Project Stardust was developed in collaboration with Skip as an at-home wearable concept for maternal
+                health monitoring.
+                I served as a technical advisor to a cross-functional team of engineers and designers, helping translate
+                user needs into
+                the mechanical architecture of the belt, sensor-array packaging, physical prototyping strategy, and
+                companion-app experience.
                 <br><br>
-                The goal was to create a wearable that could support continuous monitoring while feeling comfortable, approachable, and
+                The goal was to create a wearable that could support continuous monitoring while feeling comfortable,
+                approachable, and
                 practical enough to fit naturally into daily life.
               </p>
             </div>
@@ -175,12 +186,16 @@
             <div class="description">
               <h4>User Research &amp; Product Direction</h4>
               <p>
-                The team combined literature review and competitive analysis with 84 survey responses and 31 discovery interviews across
+                The team combined literature review and competitive analysis with 84 survey responses and 31 discovery
+                interviews across
                 first-time, second-time, high-risk, rural/remote, and underserved mothers.
                 <br><br>
-                Research showed that anxiety was highest between appointments, while raw data without context could increase stress.
-                Users trusted their providers most and wanted continuous information to support, not replace, clinical care. Bulky belts
-                and handheld ultrasound products also felt impractical or intimidating, pushing the concept toward a softer, lower-profile
+                Research showed that anxiety was highest between appointments, while raw data without context could
+                increase stress.
+                Users trusted their providers most and wanted continuous information to support, not replace, clinical
+                care. Bulky belts
+                and handheld ultrasound products also felt impractical or intimidating, pushing the concept toward a
+                softer, lower-profile
                 wearable paired with clear, interpretable feedback.
               </p>
             </div>
@@ -193,19 +208,25 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img/skip/sketches.jpg" alt="Initial Project Stardust wearable ideation sketches" class="skip-sketch-img">
-            <img src="img/skip/final sketch.jpg" alt="Final Project Stardust monitoring belt concept sketch" class="skip-sketch-img">
+            <img src="img/skip/sketches.png" alt="Initial Project Stardust wearable ideation sketches"
+              class="skip-sketch-img">
+            <img src="img/skip/final sketch.png" alt="Final Project Stardust monitoring belt concept sketch"
+              class="skip-sketch-img">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Initial Ideation</h4>
               <p>
-                Early concepts explored several ways to integrate sensing into everyday wear, including belly bands, adhesive patches,
-                clip-on modules, and garment-integrated concepts. We compared how each approach would affect sensor contact, repeatable
+                Early concepts explored several ways to integrate sensing into everyday wear, including belly bands,
+                adhesive patches,
+                clip-on modules, and garment-integrated concepts. We compared how each approach would affect sensor
+                contact, repeatable
                 placement, comfort, charging, and the amount of hardware a user would need to manage.
                 <br><br>
-                We ultimately converged on a monitoring belt architecture with modular sensor pods. The belt gave us a more stable base
-                for positioning sensors around the abdomen while still leaving room to iterate on soft goods, pod placement, and cable routing.
+                We ultimately converged on a monitoring belt architecture with modular sensor pods. The belt gave us a
+                more stable base
+                for positioning sensors around the abdomen while still leaving room to iterate on soft goods, pod
+                placement, and cable routing.
               </p>
             </div>
           </div>
@@ -217,20 +238,27 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img/skip/sensor array.png" alt="Exploded Project Stardust sensor array stackup" class="skip-section-img">
+            <img src="img/skip/sensor array.png" alt="Exploded Project Stardust sensor array stackup"
+              class="skip-section-img">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Belt Architecture &amp; Sensor Array</h4>
               <p>
-                The belt architecture used <strong>three compact sensor arrays</strong> distributed across the abdomen. The arrays were
-                connected through USB-C cabling routed through the belt to a shared battery pack held in an elastic pocket. Keeping the
-                battery separate from the sensing pods helped reduce the size and mass of the modules against the body while keeping the
+                The belt architecture used <strong>three compact sensor arrays</strong> distributed across the abdomen.
+                The arrays were
+                connected through USB-C cabling routed through the belt to a shared battery pack held in an elastic
+                pocket. Keeping the
+                battery separate from the sensing pods helped reduce the size and mass of the modules against the body
+                while keeping the
                 power system accessible for charging.
                 <br><br>
-                Each sensor-array housing was built around a stacked package containing <strong>1 IMU, 1 ultrasound sensor, 2 EHG electrodes,
-                and 2 microphones</strong>, along with the FPGA and speaker assembly shown in the concept stackup. I modeled the housing and
-                overall wearable architecture in Onshape, balancing sensor placement and skin contact against pod thickness, cable routing,
+                Each sensor-array housing was built around a stacked package containing <strong>1 IMU, 1 ultrasound
+                  sensor, 2 EHG electrodes,
+                  and 2 microphones</strong>, along with the FPGA and speaker assembly shown in the concept stackup. I
+                modeled the housing and
+                overall wearable architecture in Onshape, balancing sensor placement and skin contact against pod
+                thickness, cable routing,
                 serviceability, and comfort.
               </p>
             </div>
@@ -243,18 +271,21 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-5" data-aos="fade-up">
-            <img src="img/skip/Header 2.JPG" alt="Fabricated Project Stardust wearable prototype" class="skip-section-img">
+            <img src="img/skip/Header 2.JPG" alt="Fabricated Project Stardust wearable prototype"
+              class="skip-section-img">
           </div>
           <div class="col-md-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
             <div class="description">
               <h4>Prototype Fabrication</h4>
               <p>
-                To create the physical mockup, we used a 3D-printed housing and dimensionally representative sensor arrays to evaluate the
+                To create the physical mockup, we used a 3D-printed housing and dimensionally representative sensor
+                arrays to evaluate the
                 scale and form factor of the hardware on-body.
                 <br><br>
-                To improve wearable conformability and make the prototype easier to evaluate, the sensor pods and battery were sewn into
-                the band. Much of the iteration happened in the soft goods: we experimented with elastic properties, band materials,
-                material thickness, pocket construction, and component placement to understand how the belt could hold the electronics
+                To improve wearable conformability and make the prototype easier to evaluate, the sensor pods and
+                battery were sewn into
+                the band. We experimented with elastic properties, band materials, material thickness, pocket
+                construction, and component placement to understand how the belt could hold the electronics
                 securely without feeling overly rigid or bulky.
               </p>
             </div>
@@ -270,9 +301,12 @@
             <div class="description">
               <h4>Companion App</h4>
               <p>
-                I also contributed to the UX and functional design of the companion application. The app was structured around wearable
-                onboarding, daily snapshots, trends, ultrasound visualization, battery and connectivity status, and tiered monitoring alerts.
-                Rather than exposing sensor streams on their own, the experience was designed to translate measurements into understandable
+                I also contributed to the UX and functional design of the companion application. The app was structured
+                around wearable
+                onboarding, daily snapshots, trends, ultrasound visualization, battery and connectivity status, and
+                tiered monitoring alerts.
+                Rather than exposing sensor streams on their own, the experience was designed to translate measurements
+                into understandable
                 context and make relevant information easier to share with a care team.
               </p>
             </div>
@@ -465,4 +499,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>
