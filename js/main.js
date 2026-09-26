@@ -45,18 +45,37 @@
   });
 
 
-  var siteOwlCarousel = function() {
-  	$('.testimonial-carousel').owlCarousel({
-		  center: true,
-	    items: 1,
-	    loop: true,
-	    margin: 0,
-	    autoplay: true,
-	    smartSpeed: 1000,
-		});
-  };
-  siteOwlCarousel();
 
+  var customCursor = function() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+    var cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    cursor.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(cursor);
+
+    document.addEventListener('mousemove', function(e) {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      cursor.classList.add('is-visible');
+    });
+
+    document.addEventListener('mouseleave', function() {
+      cursor.classList.remove('is-visible');
+    });
+
+    document.addEventListener('mouseover', function(e) {
+      cursor.classList.toggle('is-disabled', !!e.target.closest('.item-wrap--disabled'));
+      cursor.classList.toggle('is-project', !!e.target.closest('.item-wrap:not(.item-wrap--disabled)'));
+      cursor.classList.toggle('is-menu', !!e.target.closest('.burger'));
+      cursor.classList.toggle(
+        'is-link',
+        !!e.target.closest('a, button, input, textarea, select') &&
+        !e.target.closest('.item-wrap, .burger')
+      );
+    });
+  };
+  customCursor();
 
 })(jQuery);
 
