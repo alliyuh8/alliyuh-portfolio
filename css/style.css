@@ -649,31 +649,31 @@ h6,
 }
 
 .custom-cursor.is-link {
-  width: 18px;
-  height: 18px;
-  background: transparent;
-  border: 1px solid #111;
+  width: 14px;
+  height: 14px;
+  background: rgba(202, 183, 255, 0.5);
+  border: none;
 }
 
 .custom-cursor.is-project {
-  width: 30px;
-  height: 30px;
-  background: rgba(17, 17, 17, 0.16);
-  border: 1px solid rgba(17, 17, 17, 0.7);
+  width: 18px;
+  height: 18px;
+  background: rgba(202, 183, 255, 0.5);
+  border: none;
 }
 
 .custom-cursor.is-menu {
-  width: 24px;
-  height: 24px;
-  background: rgba(17, 17, 17, 0.12);
-  border: 1px solid #111;
+  width: 16px;
+  height: 16px;
+  background: rgba(202, 183, 255, 0.5);
+  border: none;
 }
 
 .custom-cursor.is-disabled {
-  width: 28px;
-  height: 28px;
-  background: transparent;
-  border: 1px dashed #777;
+  width: 18px;
+  height: 18px;
+  background: rgba(202, 183, 255, 0.35);
+  border: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
