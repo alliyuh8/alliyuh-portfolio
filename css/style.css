@@ -171,26 +171,6 @@ h6,
   height: auto;
 }
 
-.testimonial-wrap {
-  padding: 50px 50px 80px 50px;
-  background: #eceff2;
-}
-
-.testimonial-wrap .testimonial {
-  text-align: center;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.testimonial-wrap .testimonial img {
-  border-radius: 50%;
-  width: 120px;
-  margin: 0 auto 30px auto;
-}
-
-.testimonial-wrap .testimonial blockquote p {
-  font-size: 20px;
-}
 
 .h3 {
   font-size: 20px;
@@ -269,33 +249,6 @@ h6,
   background: #000;
 }
 
-.testimonial-carousel .owl-dots {
-  position: absolute;
-  bottom: 40px;
-  width: 100%;
-  text-align: center;
-}
-
-.testimonial-carousel .owl-dots .owl-dot {
-  display: inline-block;
-}
-
-.testimonial-carousel .owl-dots .owl-dot > span {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background-color: #cbd3da;
-  border-radius: 50%;
-  margin: 5px;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active {
-  outline: none;
-}
-
-.testimonial-carousel .owl-dots .owl-dot.active > span {
-  background: #0d1e2d;
-}
 
 .sticky-content {
   position: sticky;
@@ -674,3 +627,71 @@ h6,
   letter-spacing: 0.08rem;
   text-transform: none;
 }
+/* Custom cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #111;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: width 160ms ease, height 160ms ease, background-color 160ms ease,
+    border-color 160ms ease, opacity 160ms ease;
+}
+
+.custom-cursor.is-visible {
+  opacity: 0.72;
+}
+
+.custom-cursor.is-link {
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: 1px solid #111;
+}
+
+.custom-cursor.is-project {
+  width: 30px;
+  height: 30px;
+  background: rgba(17, 17, 17, 0.16);
+  border: 1px solid rgba(17, 17, 17, 0.7);
+}
+
+.custom-cursor.is-menu {
+  width: 24px;
+  height: 24px;
+  background: rgba(17, 17, 17, 0.12);
+  border: 1px solid #111;
+}
+
+.custom-cursor.is-disabled {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: 1px dashed #777;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body,
+  a,
+  button,
+  .burger,
+  .item-wrap,
+  input,
+  textarea,
+  select {
+    cursor: none !important;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
