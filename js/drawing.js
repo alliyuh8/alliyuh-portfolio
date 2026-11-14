@@ -12,7 +12,7 @@
   var page = decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
   var isHome = page === 'index.html';
   var excludedPages = ['about.html', 'contact.html', 'services.html', 'works.html'];
-  if (excludedPages.indexOf(page) !== -1) return;
+  var drawingEnabled = excludedPages.indexOf(page) === -1;
 
   var HOLD_MS = 8000;
   var FADE_MS = 2000;
@@ -21,6 +21,69 @@
   var strokes = [];
   var activeStroke = null;
   var frameRequested = false;
+  var cursor = document.createElement('div');
+  cursor.className = 'sketch-cursor';
+  cursor.setAttribute('aria-hidden', 'true');
+  var tooltip = document.createElement('span');
+  tooltip.className = 'sketch-cursor-tooltip';
+  tooltip.textContent = 'try drawing with me!';
+  cursor.appendChild(tooltip);
+  document.body.appendChild(cursor);
+
+  var hoverTimer = null;
+  var lastX = 0;
+  var lastY = 0;
+  var visible = false;
+  var lastPosition = null;
+  var lastDrawable = false;
+  var lastClickable = false;
+
+  function cancelPrompt() {
+    clearTimeout(hoverTimer);
+    hoverTimer = null;
+    cursor.classList.remove('is-prompting');
+  }
+  function updateHover(event) {
+    var target = document.elementFromPoint(event.clientX, event.clientY);
+    var clickable = !!(target && target.closest('a, button, input, select, textarea, label, summary, [role="button"], [role="link"], [data-toggle], .burger, #filters, .item-wrap, .owl-nav, .owl-dots'));
+    var drawable = drawingEnabled && isDrawableTarget(target);
+    var moved = !lastPosition || Math.hypot(event.clientX - lastX, event.clientY - lastY) > 2;
+    var changed = lastDrawable !== drawable || lastClickable !== clickable;
+    lastX = event.clientX;
+    lastY = event.clientY;
+    lastPosition = true;
+    lastDrawable = drawable;
+    lastClickable = clickable;
+    cursor.style.left = event.clientX + 'px';
+    cursor.style.top = event.clientY + 'px';
+    cursor.classList.add('is-visible');
+    cursor.classList.toggle('is-pen', clickable);
+    visible = true;
+    if (moved || changed || activeStroke) {
+      cancelPrompt();
+      if (drawable && !activeStroke) hoverTimer = setTimeout(function () {
+        cursor.classList.add('is-prompting');
+        hoverTimer = null;
+      }, 3000);
+    }
+  }
+
+  // Pointermove is delivered even while the mouse button is held down.
+  document.addEventListener('pointermove', function (event) {
+    if (event.pointerType === 'mouse' || event.pointerType === 'pen') updateHover(event);
+  }, { passive: true });
+  document.addEventListener('pointerover', function (event) {
+    if (event.pointerType === 'mouse' || event.pointerType === 'pen') updateHover(event);
+  }, { passive: true });
+  document.addEventListener('pointerout', function (event) {
+    if (!event.relatedTarget) {
+      cursor.classList.remove('is-visible');
+      visible = false;
+      cancelPrompt();
+    }
+  });
+  window.addEventListener('blur', function () { cursor.classList.remove('is-visible'); cancelPrompt(); });
+
 
   var canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
@@ -126,9 +189,10 @@
 
   document.addEventListener('pointerdown', function (event) {
     if (event.pointerType !== 'mouse' && event.pointerType !== 'pen') return;
-    if (event.button !== 0 || activeStroke || !isDrawableTarget(event.target)) return;
+    if (!drawingEnabled || event.button !== 0 || activeStroke || !isDrawableTarget(event.target)) return;
 
     event.preventDefault(); // No text selection or image drag while sketching.
+    cancelPrompt();
     activeStroke = { pointerId: event.pointerId, points: [point(event)], finishedAt: null };
     strokes.push(activeStroke);
     requestRender();
@@ -149,13 +213,17 @@
     if (!activeStroke || (event && event.pointerId !== undefined && event.pointerId !== activeStroke.pointerId)) return;
     activeStroke.finishedAt = performance.now();
     activeStroke = null;
+    if (lastDrawable && visible) hoverTimer = setTimeout(function () {
+      cursor.classList.add('is-prompting');
+      hoverTimer = null;
+    }, 3000);
     requestRender();
   }
   window.addEventListener('pointerup', finishStroke);
   window.addEventListener('pointercancel', finishStroke);
   window.addEventListener('blur', finishStroke);
   window.addEventListener('resize', resize);
-  window.addEventListener('scroll', requestRender, { passive: true });
+  window.addEventListener('scroll', function () { cancelPrompt(); requestRender(); }, { passive: true });
 
   resize();
 })();

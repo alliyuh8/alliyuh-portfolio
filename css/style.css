@@ -627,71 +627,59 @@ h6,
   letter-spacing: 0.08rem;
   text-transform: none;
 }
-/* Custom cursor */
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #111;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: width 160ms ease, height 160ms ease, background-color 160ms ease,
-    border-color 160ms ease, opacity 160ms ease;
-}
-
-.custom-cursor.is-visible {
-  opacity: 0.72;
-}
-
-.custom-cursor.is-link {
-  width: 14px;
-  height: 14px;
-  background: rgba(202, 183, 255, 0.5);
-  border: none;
-}
-
-.custom-cursor.is-project {
-  width: 18px;
-  height: 18px;
-  background: rgba(202, 183, 255, 0.5);
-  border: none;
-}
-
-.custom-cursor.is-menu {
-  width: 16px;
-  height: 16px;
-  background: rgba(202, 183, 255, 0.5);
-  border: none;
-}
-
-.custom-cursor.is-disabled {
-  width: 18px;
-  height: 18px;
-  background: rgba(202, 183, 255, 0.35);
-  border: none;
-}
-
+/* Custom artwork cursor, independent of the fading drawing canvas. */
 @media (hover: hover) and (pointer: fine) {
-  body,
-  a,
-  button,
-  .burger,
-  .item-wrap,
-  input,
-  textarea,
-  select {
-    cursor: none !important;
-  }
+  body, body *, a, button, input, textarea, select, .burger { cursor: none !important; }
 }
-
+.sketch-cursor {
+  position: fixed;
+  width: 54px;
+  height: 48px;
+  transform: translate(-5px, -45px);
+  background: url('../img/pencil-cursor.png') center / contain no-repeat;
+  pointer-events: none;
+  z-index: 2147483001;
+  opacity: 0;
+  visibility: hidden;
+}
+.sketch-cursor.is-visible { opacity: 1; visibility: visible; }
+.sketch-cursor.is-pen {
+  background-image: url('../img/pen-cursor.png');
+}
+.sketch-cursor-tooltip {
+  position: absolute;
+  left: 47px;
+  top: -12px;
+  white-space: nowrap;
+  padding: 7px 11px;
+  font: 500 12px/1.3 'Chivo', sans-serif;
+  color: #34303d;
+  background: white;
+  border: 1px solid #d7d0e2;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+  border-radius: 13px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+}
+.sketch-cursor-tooltip::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 18px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-left: 1px solid #d7d0e2;
+  border-bottom: 1px solid #d7d0e2;
+  transform: rotate(45deg);
+}
+.sketch-cursor.is-prompting .sketch-cursor-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 @media (hover: none), (pointer: coarse) {
-  .custom-cursor {
-    display: none;
-  }
+  .sketch-cursor { display: none; }
 }
-
