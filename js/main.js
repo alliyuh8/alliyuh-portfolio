@@ -85,3 +85,14 @@ AOS.init({
 	duration: 1000,
 	once: true
 });
+
+
+// Load optional sketch annotations on the homepage and individual project pages.
+(function () {
+  var page = decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  if (['about.html', 'contact.html', 'services.html', 'works.html'].indexOf(page) !== -1) return;
+  var script = document.createElement('script');
+  script.src = 'js/drawing.js';
+  script.defer = true;
+  document.body.appendChild(script);
+})();
