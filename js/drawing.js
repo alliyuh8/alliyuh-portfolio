@@ -129,13 +129,13 @@
     if (event.button !== 0 || activeStroke || !isDrawableTarget(event.target)) return;
 
     event.preventDefault(); // No text selection or image drag while sketching.
-    activeStroke = { points: [point(event)], finishedAt: null };
+    activeStroke = { pointerId: event.pointerId, points: [point(event)], finishedAt: null };
     strokes.push(activeStroke);
     requestRender();
   }, { capture: true, passive: false });
 
   window.addEventListener('pointermove', function (event) {
-    if (!activeStroke || event.pointerId !== activeStroke.pointerId && activeStroke.pointerId !== undefined) return;
+    if (!activeStroke || event.pointerId !== activeStroke.pointerId) return;
     var next = point(event);
     var points = activeStroke.points;
     var last = points[points.length - 1];
@@ -145,8 +145,8 @@
     }
   });
 
-  function finishStroke() {
-    if (!activeStroke) return;
+  function finishStroke(event) {
+    if (!activeStroke || (event && event.pointerId !== undefined && event.pointerId !== activeStroke.pointerId)) return;
     activeStroke.finishedAt = performance.now();
     activeStroke = null;
     requestRender();
