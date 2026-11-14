@@ -683,3 +683,44 @@ h6,
 @media (hover: none), (pointer: coarse) {
   .sketch-cursor { display: none; }
 }
+
+/* Keep multi-media project headers in one aligned row inside the Bootstrap container. */
+.project-header-media {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(6px, 1.5vw, 18px);
+  width: 100%;
+  margin: 0;
+}
+.project-header-media:has(> :nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.project-header-media .project-header-item {
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+.project-header-media .img-header,
+.project-header-media .img-header-large,
+.project-header-media .header-video-wrap,
+.project-header-media .header-video-wrap video {
+  display: block;
+  width: 100%;
+  height: clamp(110px, 23vw, 320px);
+  max-width: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+.project-header-media .header-video-wrap {
+  height: auto;
+}
+@media (max-width: 575px) {
+  .project-header-media { gap: 6px; }
+  .project-header-media .img-header,
+  .project-header-media .img-header-large,
+  .project-header-media .header-video-wrap video {
+    height: clamp(100px, 28vw, 160px);
+  }
+}
