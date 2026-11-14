@@ -46,38 +46,6 @@
 
 
 
-  var customCursor = function() {
-    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-
-    var cursor = document.createElement('div');
-    cursor.className = 'custom-cursor';
-    cursor.setAttribute('aria-hidden', 'true');
-    document.body.appendChild(cursor);
-
-    document.addEventListener('mousemove', function(e) {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-      cursor.classList.add('is-visible');
-    });
-
-    document.addEventListener('mouseleave', function() {
-      cursor.classList.remove('is-visible');
-    });
-
-    document.addEventListener('mouseover', function(e) {
-      var disabledProject = e.target.closest('.item-wrap--disabled');
-      var project = e.target.closest('.item-wrap:not(.item-wrap--disabled)');
-      var menu = e.target.closest('.burger');
-      var link = e.target.closest('a, button, input, textarea, select');
-
-      cursor.classList.toggle('is-disabled', !!disabledProject);
-      cursor.classList.toggle('is-project', !!project);
-      cursor.classList.toggle('is-menu', !!menu);
-      cursor.classList.toggle('is-link', !!link && !project && !menu);
-    });
-  };
-  customCursor();
-
 })(jQuery);
 
 AOS.init({
@@ -90,7 +58,7 @@ AOS.init({
 // Load optional sketch annotations on the homepage and individual project pages.
 (function () {
   var page = decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  if (['about.html', 'contact.html', 'services.html', 'works.html'].indexOf(page) !== -1) return;
+  // Cursor is available everywhere; drawing rules are applied in drawing.js.
   var script = document.createElement('script');
   script.src = 'js/drawing.js';
   script.defer = true;
